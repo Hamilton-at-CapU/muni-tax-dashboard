@@ -56,7 +56,7 @@ PLOT_VARIABLES: dict[str, str] = {
 # Load data
 # ---------------------------------------------------------------------------
 
-def load_data(path: str | Path = 'app/data.json') -> pd.DataFrame:
+def load_data(path: str | Path = 'data.json') -> pd.DataFrame:
     """Load data.json into a flat DataFrame.
 
     Top-level scalar fields become columns directly.
@@ -92,7 +92,7 @@ def load_data(path: str | Path = 'app/data.json') -> pd.DataFrame:
     return df
 
 
-plot_df = load_data()
+
 
 
 # ---------------------------------------------------------------------------
