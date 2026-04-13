@@ -104,7 +104,7 @@ app_dir = Path(__file__).parent
 
 #curr_dir = Path(__file__).cwd()
 #plot_df = load_data(curr_dir / "data.json")
-plot_df = load_data("data.json")
+plot_df = load_data("app/data.json")
 
 
 YEAR_MIN = START_YEAR
