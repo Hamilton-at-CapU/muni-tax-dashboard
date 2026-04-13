@@ -1,0 +1,35 @@
+:root {
+  --bslib-sidebar-main-bg: #f5f5f5;
+}
+
+/* Sidebar */
+.sidebar {
+  font-size: 0.9rem;
+}
+
+/* Value box tweaks */
+.value-box .value-box-value {
+  font-size: 1.4rem !important;
+}
+
+.value-box .value-box-title {
+  font-size: 0.75rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Card headers */
+.card-header {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Reduce padding on small value-box grids */
+.value-box-grid .card-body {
+  padding: 0.6rem 0.8rem;
+}
+
+/* Full-height main panel */
+.bslib-main-panel {
+  overflow-y: auto;
+}
