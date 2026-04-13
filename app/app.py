@@ -102,8 +102,10 @@ def load_data(path: str | Path = 'data.json') -> pd.DataFrame:
 app_dir = Path(__file__).parent
 #plot_df = load_data(app_dir / "data.json")
 
-curr_dir = Path(__file__).cwd()
-plot_df = load_data(curr_dir / "data.json")
+#curr_dir = Path(__file__).cwd()
+#plot_df = load_data(curr_dir / "data.json")
+plot_df = load_data("data.json")
+
 
 YEAR_MIN = START_YEAR
 YEAR_MAX = END_YEAR
