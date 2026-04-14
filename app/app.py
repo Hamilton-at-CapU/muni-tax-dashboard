@@ -1,7 +1,10 @@
 from pathlib import Path
 import json
+import numpy as np
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 from shiny import reactive, req
 from shiny.express import input, render, ui
 from shinywidgets import render_plotly
@@ -100,11 +103,6 @@ def load_data(path: str | Path = 'data.json') -> pd.DataFrame:
 # ---------------------------------------------------------------------------
 
 app_dir = Path(__file__).parent
-#plot_df = load_data(app_dir / "data.json")
-
-#curr_dir = Path(__file__).cwd()
-#plot_df = load_data(curr_dir / "data.json")
-#plot_df = load_data("app/data.json")
 
 try:
     app_dir = Path(__file__).parent
@@ -145,90 +143,35 @@ with ui.sidebar():
         width="100%",
     )
     ui.hr()
-    ui.h6("Year range")
-    ui.input_slider(
-        "years",
-        None,
-        min=YEAR_MIN,
-        max=YEAR_MAX,
-        value=[YEAR_MIN, YEAR_MAX],
-        step=1,
-        sep="",
-    )
-    ui.hr()
-    ui.h6("Trend variable")
-    ui.input_select(
-        "trend_var",
-        None,
-        choices=OVERVIEW_VARS,
-        selected="Tax per Capita",
-    )
-    ui.hr()
-    ui.h6("Property class")
-    ui.input_select(
-        "prop_class",
-        None,
-        choices=PROPERTY_CLASSES,
-        selected="Residential",
-    )
 
-# ---------------------------------------------------------------------------
-# Value boxes — snapshot for the most recent year selected
-# ---------------------------------------------------------------------------
 
-with ui.layout_columns(col_widths={"sm": 6, "md": 3}, class_="value-box-grid"):
-
-    with ui.value_box(showcase=ui.tags.i(class_="bi bi-people-fill"), theme="primary"):
-        "Population"
-        @render.text
-        def vb_population():
-            d = latest_df()
-            if d.empty:
-                return "—"
-            total = d["Population"].sum()
-            return f"{total:,.0f}"
-
-    with ui.value_box(showcase=ui.tags.i(class_="bi bi-house-fill"), theme="success"):
-        "Avg House Value"
-        @render.text
-        def vb_house():
-            d = latest_df()
-            if d.empty:
-                return "—"
-            val = d["House Value"].mean()
-            return "—" if val != val else f"${val:,.0f}"
-
-    with ui.value_box(showcase=ui.tags.i(class_="bi bi-cash-stack"), theme="warning"):
-        "Avg Tax per Capita"
-        @render.text
-        def vb_tax_capita():
-            d = latest_df()
-            if d.empty:
-                return "—"
-            val = d["Tax per Capita"].mean()
-            return "—" if val != val else f"${val:,.0f}"
-
-    with ui.value_box(showcase=ui.tags.i(class_="bi bi-building"), theme="danger"):
-        "Avg Residential Tax Rate"
-        @render.text
-        def vb_res_rate():
-            d = latest_df()
-            if d.empty:
-                return "—"
-            val = d["Residential Tax Rate"].mean()
-            return "—" if val != val else f"{val:.4f}"
 
 # ---------------------------------------------------------------------------
 # Charts
 # ---------------------------------------------------------------------------
 
-with ui.layout_columns(col_widths={"sm": 12, "lg": [7, 5]}):
-
+with ui.layout_columns(col_widths=12):
     with ui.card(full_screen=True):
-        with ui.card_header():
-            @render.text
-            def trend_header():
-                return input.trend_var() + " over time"
+        with ui.card_header(class_="d-flex align-items-center gap-2"):
+            ui.span("Trend: ")
+            ui.input_select(
+                "trend_var",
+                None,
+                choices=list(PLOT_VARIABLES.keys()),
+                selected="Tax per Capita",
+                width="auto",
+            )
+            ui.span(" for years: ")
+            ui.input_slider(
+                "years",
+                None,
+                min=YEAR_MIN,
+                max=YEAR_MAX,
+                value=[YEAR_MIN, YEAR_MAX],
+                step=1,
+                sep="",
+                width="300px",
+            )
 
         @render_plotly
         def trend_chart():
@@ -251,73 +194,54 @@ with ui.layout_columns(col_widths={"sm": 12, "lg": [7, 5]}):
             )
             return fig
 
-    with ui.card(full_screen=True):
-        with ui.card_header():
-            @render.text
-            def rate_header():
-                return input.prop_class() + " Tax Rate over time"
-
-        @render_plotly
-        def rate_chart():
-            munis = req(input.municipalities())
-            col = input.prop_class() + " Tax Rate"
-            d = filtered_df()[["Year", "Municipality", col]].dropna()
-            fig = px.line(
-                d, x="Year", y=col, color="Municipality",
-                markers=True,
-                color_discrete_sequence=px.colors.qualitative.D3,
-            )
-            fig.update_layout(
-                legend=dict(orientation="h", y=-0.18, x=0.5, xanchor="center"),
-                margin=dict(l=10, r=10, t=10, b=10),
-                yaxis_title="Tax Rate ($ per $1,000)",
-            )
-            return fig
-
-with ui.layout_columns(col_widths={"sm": 12, "lg": [5, 7]}):
+with ui.layout_columns(col_widths=12):
 
     with ui.card(full_screen=True):
-        with ui.card_header():
-            @render.text
-            def multiple_header():
-                return input.prop_class() + " Tax Multiples — latest year"
-
-        @render_plotly
-        def multiple_chart():
-            req(input.municipalities())
-            col = input.prop_class() + " Tax Multiple"
-            d = latest_df()[["Municipality", col]].dropna().sort_values(col)
-            fig = px.bar(
-                d, x=col, y="Municipality", orientation="h",
-                color="Municipality",
-                color_discrete_sequence=px.colors.qualitative.D3,
+        with ui.card_header(class_="d-flex align-items-center gap-2"):
+            ui.span("Breakdown of :")
+            ui.input_select(
+                "breakdown_metric",
+                None,
+                choices=["Tax Rate", "Tax Multiple", "Taxable Value"],
+                selected="Tax Rate",
+                width="auto",
             )
-            fig.update_layout(
-                showlegend=False,
-                margin=dict(l=10, r=10, t=10, b=10),
-                xaxis_title="Tax Multiple",
+            ui.span(" for year: ")
+            ui.input_select(
+                "breakdown_year",
+                None,
+                choices=[str(y) for y in range(START_YEAR, END_YEAR + 1)],
+                selected=str(END_YEAR),
+                width="auto",
             )
-            return fig
-
-    with ui.card(full_screen=True):
-        ui.card_header("Tax Breakdown — latest year")
 
         @render_plotly
         def breakdown_chart():
             req(input.municipalities())
-            rate_cols = [c + " Tax Rate" for c in PROPERTY_CLASSES]
-            cols = ["Municipality"] + rate_cols
-            d = latest_df()[cols].dropna(how="all", subset=rate_cols)
+            metric = input.breakdown_metric()
+            year = int(input.breakdown_year())
+            metric_cols = [c + f" {metric}" for c in PROPERTY_CLASSES]
+            cols = ["Municipality"] + metric_cols
+            munis = input.municipalities()
+            d = plot_df[
+                plot_df["Municipality"].isin(munis) &
+                (plot_df["Year"] == year)
+            ][cols].dropna(how="all", subset=metric_cols)
             d_long = d.melt(
                 id_vars="Municipality",
                 var_name="Property Class",
-                value_name="Tax Rate",
+                value_name=metric,
             )
             d_long["Property Class"] = d_long["Property Class"].str.replace(
-                " Tax Rate", "", regex=False
+                f" {metric}", "", regex=False
             )
+            y_labels = {
+                "Tax Rate":      "Tax Rate ($ per $1,000)",
+                "Tax Multiple":  "Tax Multiple",
+                "Taxable Value": "Taxable Value ($)",
+            }
             fig = px.bar(
-                d_long, x="Municipality", y="Tax Rate",
+                d_long, x="Municipality", y=metric,
                 color="Property Class",
                 barmode="group",
                 color_discrete_sequence=px.colors.qualitative.D3,
@@ -325,8 +249,155 @@ with ui.layout_columns(col_widths={"sm": 12, "lg": [5, 7]}):
             fig.update_layout(
                 legend=dict(orientation="h", y=-0.25, x=0.5, xanchor="center"),
                 margin=dict(l=10, r=10, t=10, b=10),
-                yaxis_title="Tax Rate ($ per $1,000)",
+                yaxis_title=y_labels[metric],
             )
+            return fig
+
+# ---------------------------------------------------------------------------
+# Density plot — distribution across all municipalities for a single year
+# ---------------------------------------------------------------------------
+
+with ui.layout_columns(col_widths=12):
+    with ui.card(full_screen=True):
+        with ui.card_header(class_="d-flex align-items-center gap-2"):
+            ui.span("Distribution of")
+            ui.input_select(
+                "density_var",
+                None,
+                choices=list(PLOT_VARIABLES.keys()),
+                selected="Tax per Capita",
+                width="auto",
+            )
+            ui.span(" for year: ")
+            ui.input_select(
+                "density_year",
+                None,
+                choices=[str(y) for y in range(START_YEAR, END_YEAR + 1)],
+                selected=str(END_YEAR),
+                width="auto",
+            )
+        ui.card_footer(
+            "Density distribution includes all municipalities."
+        )
+
+        @render_plotly
+        def density_chart():
+            munis = req(input.municipalities())
+            col = PLOT_VARIABLES[input.density_var()]
+            year = int(input.density_year())
+
+            all_d = plot_df[plot_df["Year"] == year][["Municipality", col]].dropna()
+            if all_d.empty:
+                return go.Figure()
+
+            values = all_d[col].values
+
+            # KDE via numpy histogram as a smooth curve
+            x_min, x_max = values.min(), values.max()
+            x_range = np.linspace(x_min, x_max, 300)
+
+            bw = 1.06 * values.std() * len(values) ** -0.2  # Silverman's rule
+            kde_y = np.array([
+                np.mean(np.exp(-0.5 * ((x - values) / bw) ** 2) / (bw * np.sqrt(2 * np.pi)))
+                for x in x_range
+            ])
+
+            fig = make_subplots(
+                rows=2, cols=1,
+                row_heights=[0.85, 0.15],
+                shared_xaxes=True,
+                vertical_spacing=0.02,
+            )
+
+            # KDE curve
+            fig.add_trace(go.Scatter(
+                x=x_range,
+                y=kde_y,
+                mode="lines",
+                fill="tozeroy",
+                line=dict(color="rgba(99,110,250,0.8)", width=2),
+                fillcolor="rgba(99,110,250,0.15)",
+                name="All municipalities",
+                hoverinfo="skip",
+            ), row=1, col=1)
+
+            colors = px.colors.qualitative.D3
+            selected_rows = all_d[all_d["Municipality"].isin(munis)]
+
+            # Vertical lines + annotations for selected municipalities
+            for i, (_, row) in enumerate(selected_rows.iterrows()):
+                muni = row["Municipality"]
+                val = row[col]
+                pct = (values < val).mean() * 100
+                color = colors[i % len(colors)]
+
+                fig.add_vline(
+                    x=val,
+                    line=dict(color=color, width=2, dash="dash"),
+                    row=1, col=1,
+                )
+                fig.add_annotation(
+                    x=val,
+                    y=kde_y.max(),
+                    text=f"{muni}<br>({pct:.0f}th pct)",
+                    showarrow=True,
+                    arrowhead=2,
+                    arrowcolor=color,
+                    font=dict(size=11, color=color),
+                    bgcolor="rgba(255,255,255,0.8)",
+                    bordercolor=color,
+                    ax=0,
+                    ay=-36,
+                    xref="x", yref="y",
+                )
+
+            # 1D rug — all municipalities in grey
+            fig.add_trace(go.Scatter(
+                x=all_d[col],
+                y=np.zeros(len(all_d)),
+                mode="markers",
+                marker=dict(
+                    symbol="line-ns",
+                    size=12,
+                    color="rgba(150,150,150,0.4)",
+                    line=dict(color="rgba(150,150,150,0.4)", width=1),
+                ),
+                text=all_d["Municipality"],
+                hovertemplate="%{text}: %{x}<extra></extra>",
+                name="All municipalities",
+                showlegend=False,
+            ), row=2, col=1)
+
+            # 1D rug — selected municipalities highlighted
+            for i, (_, row) in enumerate(selected_rows.iterrows()):
+                muni = row["Municipality"]
+                val = row[col]
+                color = colors[i % len(colors)]
+
+                fig.add_trace(go.Scatter(
+                    x=[val],
+                    y=[0],
+                    mode="markers",
+                    marker=dict(
+                        symbol="line-ns",
+                        size=16,
+                        color=color,
+                        line=dict(color=color, width=2),
+                    ),
+                    name=muni,
+                    hovertemplate=f"{muni}: {val:.1f}<extra></extra>",
+                    showlegend=False,
+                ), row=2, col=1)
+
+            fig.update_layout(
+                xaxis2_title=input.density_var(),
+                yaxis_title="Density",
+                showlegend=False,
+                margin=dict(l=10, r=10, t=10, b=10),
+            )
+            fig.update_yaxes(visible=False, row=2, col=1)
+            fig.update_xaxes(showticklabels=True, row=2, col=1)
+
             return fig
 
 # ---------------------------------------------------------------------------

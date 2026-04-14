@@ -7,6 +7,7 @@ chevron==0.14.0
 click==8.3.2
 comm==0.2.3
 decorator==5.2.1
+et-xmlfile==2.0.0
 executing==2.2.1
 future==1.0.0
 h11==0.16.0
@@ -27,6 +28,7 @@ mdit-py-plugins==0.5.0
 mdurl==0.1.2
 narwhals==2.19.0
 numpy==2.4.4
+openpyxl==3.1.5
 opentelemetry-api==1.41.0
 orjson==3.11.8
 packaging==26.0
@@ -59,4 +61,5 @@ watchfiles==1.1.1
 wcwidth==0.6.0
 websockets==16.0
 widgetsnbextension==4.0.15
+xlrd==2.0.2
 zipp==3.23.0

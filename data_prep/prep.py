@@ -26,15 +26,15 @@ Fields extracted:
 import json
 import pandas as pd
 from pathlib import Path
-from app.config import MUNICIPALITIES, START_YEAR, END_YEAR, PROPERTY_CLASSES
+from config import MUNICIPALITIES, START_YEAR, END_YEAR, PROPERTY_CLASSES
 
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
 
 DATA_DIR = Path('.')
-RAW_DATA_DIR = DATA_DIR / 'raw_data/'
-OUTPUT_FILE = DATA_DIR / 'data.json'
+RAW_DATA_DIR = DATA_DIR / 'data_prep/raw_data/'
+OUTPUT_FILE = DATA_DIR / 'data_prep/data.json'
 
 
 
@@ -74,6 +74,7 @@ def scrape_707(year: int, municipalities: list[str]) -> dict:
     Note: 2005 and 2006 files have only one row per municipality (Residential only, no Totals row).
     In that case, aggregate values are read directly from that single row.
     """
+
     path = RAW_DATA_DIR / (f'schedule707_{year}.xlsx' if year > 2019 else f'schedule707_{year}.xls')
 
     # Read by column index to avoid year-varying header names.
