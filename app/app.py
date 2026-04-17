@@ -22,9 +22,14 @@ PLOT_VARIABLES: dict[str, str] = {
     'Total Taxable Value':                 'Total Taxable Value',
     'Total Taxes Collected':               'Total Taxes Collected',
     'Tax per Capita':                      'Tax per Capita',
-    'House Value':                         'House Value',
-    'Total Variable Rate Taxes':           'Total Variable Rate Taxes',
-    'Total Property Taxes and Charges':    'Total Property Taxes and Charges',
+    'Typical House Value':                               'Typical House Value',
+    'School Tax on Typical House':                       'School Tax on Typical House',
+    'General Municipal Tax on Typical House':            'General Municipal Tax on Typical House',
+    'Regional District Tax on Typical House':            'Regional District Tax on Typical House',
+    'Hospital Tax on Typical House':                     'Hospital Tax on Typical House',
+    'Other Tax on Typical House':                        'Other Tax on Typical House',
+    'Total Variable Rate Taxes on Typical House':        'Total Variable Rate Taxes on Typical House',
+    'Total Property Taxes and Charges on Typical House': 'Total Property Taxes and Charges on Typical House',
     # --- Property class tax rates ---
     'Residential Tax Rate':                'Residential Tax Rate',
     'Utilities Tax Rate':                  'Utilities Tax Rate',
@@ -78,9 +83,14 @@ def load_data(path: str | Path = 'data.json') -> pd.DataFrame:
             'Total Taxable Value':              r.get('Total Taxable Value'),
             'Total Taxes Collected':            r.get('Total Taxes Collected'),
             'Tax per Capita':                   r.get('Tax per Capita'),
-            'House Value':                      r.get('House Value'),
-            'Total Variable Rate Taxes':        r.get('Total Variable Rate Taxes'),
-            'Total Property Taxes and Charges': r.get('Total Property Taxes and Charges'),
+            'Typical House Value':              r.get('Typical House Value'),
+            'School Tax on Typical House':                       r.get('School Tax on Typical House'),
+            'General Municipal Tax on Typical House':            r.get('General Municipal Tax on Typical House'),
+            'Regional District Tax on Typical House':            r.get('Regional District Tax on Typical House'),
+            'Hospital Tax on Typical House':                     r.get('Hospital Tax on Typical House'),
+            'Other Tax on Typical House':                        r.get('Other Tax on Typical House'),
+            'Total Variable Rate Taxes on Typical House':        r.get('Total Variable Rate Taxes on Typical House'),
+            'Total Property Taxes and Charges on Typical House': r.get('Total Property Taxes and Charges on Typical House'),
         }
         for cls, vals in (r.get('Property Classes') or {}).items():
             if vals is None:
@@ -120,9 +130,14 @@ OVERVIEW_VARS = [
     "Total Taxable Value",
     "Total Taxes Collected",
     "Tax per Capita",
-    "House Value",
-    "Total Variable Rate Taxes",
-    "Total Property Taxes and Charges",
+    "Typical House Value",
+    "School Tax on Typical House",
+    "General Municipal Tax on Typical House",
+    "Regional District Tax on Typical House",
+    "Hospital Tax on Typical House",
+    "Other Tax on Typical House",
+    "Total Variable Rate Taxes on Typical House",
+    "Total Property Taxes and Charges on Typical House",
 ]
 
 # ---------------------------------------------------------------------------
@@ -259,7 +274,7 @@ with ui.layout_columns(col_widths=12):
 
 with ui.layout_columns(col_widths=12):
     with ui.card(full_screen=True):
-        with ui.card_header(class_="d-flex align-items-center gap-2"):
+        with ui.card_header(class_="d-flex align-items-center gap-2 flex-wrap"):
             ui.span("Distribution of")
             ui.input_select(
                 "density_var",
@@ -276,6 +291,48 @@ with ui.layout_columns(col_widths=12):
                 selected=str(END_YEAR),
                 width="auto",
             )
+            ui.span(" | ")
+
+            @render.ui
+            def density_avg_boxes():
+                col = PLOT_VARIABLES[input.density_var()]
+                year = int(input.density_year())
+                munis = input.municipalities()
+
+                all_d = plot_df[plot_df["Year"] == year][col].dropna()
+                all_d = all_d[all_d != 0]
+                sel_d = plot_df[
+                    (plot_df["Year"] == year) &
+                    (plot_df["Municipality"].isin(munis))
+                ][col].dropna()
+
+                def fmt(val):
+                    if pd.isna(val):
+                        return "N/A"
+                    if abs(val) >= 1_000_000:
+                        return f"${val/1_000_000:.2f}M"
+                    if abs(val) >= 1_000:
+                        return f"${val:,.0f}"
+                    return f"{val:,.2f}"
+
+                all_avg  = all_d.mean()  if not all_d.empty  else float("nan")
+                sel_avg  = sel_d.mean()  if not sel_d.empty  else float("nan")
+
+                return ui.TagList(
+                    ui.tags.span(
+                        ui.tags.small("All municipalities avg: ",
+                                      style="opacity:.7;"),
+                        ui.tags.strong(fmt(all_avg)),
+                        class_="badge text-bg-secondary me-1 fw-normal fs-6 px-2 py-1",
+                    ),
+                    ui.tags.span(
+                        ui.tags.small("Selected avg: ",
+                                      style="opacity:.7;"),
+                        ui.tags.strong(fmt(sel_avg)),
+                        class_="badge text-bg-primary fw-normal fs-6 px-2 py-1",
+                    ),
+                )
+
         ui.card_footer(
             "Density distribution includes all municipalities."
         )

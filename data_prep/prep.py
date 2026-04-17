@@ -20,6 +20,13 @@ Fields extracted:
   From Schedule 704 (municipality row):
     - House Value
     - Total Variable Rate Taxes
+    - House Value
+    - School Tax
+    - General Municipal Tax
+    - Regional District Tax
+    - Hospital Tax
+    - Other Tax
+    - Total Variable Rate Taxes
     - Total Property Taxes and Charges
 """
 
@@ -163,15 +170,24 @@ def scrape_704(year: int, municipalities: list[str]) -> dict:
 
     Schedule 704 column layout:
       0  - Municipalities
+      1  - Type
+      2  - RD
       3  - House Value
+      4  - School
+      5  - General Municipal Total
+      6  - Regional District
+      7  - Hospital
+      8  - BCA, MFA and Other
       9  - Total Res Variable Rate Taxes
+      10 - Total Res Parcel Taxes
+      11 - Total Res. User Fees
       12 - Total Residential Property Taxes and Charges
     """
     path = RAW_DATA_DIR / (f'schedule704_{year}.xlsx' if year > 2019 else f'schedule704_{year}.xls')
 
     # Column 1 is the municipality type (C=City, D=District) — needed to
     # disambiguate Langley and North Vancouver before we drop it.
-    df = pd.read_excel(path, header=1, usecols=[0, 1, 3, 9, 12])
+    df = pd.read_excel(path, header=1, usecols=[0, 1, 3, 4, 5, 6, 7, 8, 9, 12])
 
     # Append (City)/(District) suffix to ambiguous municipality names, then drop type col.
     _disambiguate(df, muni_col=0, type_col=1)
@@ -181,8 +197,13 @@ def scrape_704(year: int, municipalities: list[str]) -> dict:
     df.rename(columns={
         cols[0]: 'Municipality',
         cols[1]: 'House Value',
-        cols[2]: 'Total Variable Rate Taxes',
-        cols[3]: 'Total Property Taxes and Charges',
+        cols[2]: 'School Tax',
+        cols[3]: 'General Municipal Tax',
+        cols[4]: 'Regional District Tax',
+        cols[5]: 'Hospital Tax',
+        cols[6]: 'Other Tax',
+        cols[7]: 'Total Variable Rate Taxes',
+        cols[8]: 'Total Property Taxes and Charges',
     }, inplace=True)
 
     result = {}
@@ -192,9 +213,14 @@ def scrape_704(year: int, municipalities: list[str]) -> dict:
             continue
         row = row.iloc[0]
         result[muni] = {
-            'House Value':                      _int(row.get('House Value')),
-            'Total Variable Rate Taxes':        _int(row.get('Total Variable Rate Taxes')),
-            'Total Property Taxes and Charges': _int(row.get('Total Property Taxes and Charges')),
+            'Typical House Value':                               _int(row.get('House Value')),
+            'School Tax on Typical House':                       _int(row.get('School Tax')),
+            'General Municipal Tax on Typical House':            _int(row.get('General Municipal Tax')),
+            'Regional District Tax on Typical House':            _int(row.get('Regional District Tax')),
+            'Hospital Tax on Typical House':                     _int(row.get('Hospital Tax')),
+            'Other Tax on Typical House':                        _int(row.get('Other Tax')),
+            'Total Variable Rate Taxes on Typical House':        _int(row.get('Total Variable Rate Taxes')),
+            'Total Property Taxes and Charges on Typical House': _int(row.get('Total Property Taxes and Charges')),
         }
 
     return result
