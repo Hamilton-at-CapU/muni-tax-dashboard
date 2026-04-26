@@ -9,103 +9,32 @@ from shiny import reactive, req
 from shiny.express import input, render, ui
 from shinywidgets import render_plotly
 
-from config import MUNICIPALITIES, START_YEAR, END_YEAR, PROPERTY_CLASSES
 
 # ---------------------------------------------------------------------------
-# Column groups exposed to plot_data
+# Load data function
 # ---------------------------------------------------------------------------
 
-# Human-readable label -> actual column name
-PLOT_VARIABLES: dict[str, str] = {
-    # --- Overview ---
-    'Population':                          'Population',
-    'Total Taxable Value':                 'Total Taxable Value',
-    'Total Taxes Collected':               'Total Taxes Collected',
-    'Tax per Capita':                      'Tax per Capita',
-    'Typical House Value':                               'Typical House Value',
-    'School Tax on Typical House':                       'School Tax on Typical House',
-    'General Municipal Tax on Typical House':            'General Municipal Tax on Typical House',
-    'Regional District Tax on Typical House':            'Regional District Tax on Typical House',
-    'Hospital Tax on Typical House':                     'Hospital Tax on Typical House',
-    'Other Tax on Typical House':                        'Other Tax on Typical House',
-    'Total Variable Rate Taxes on Typical House':        'Total Variable Rate Taxes on Typical House',
-    'Total Property Taxes and Charges on Typical House': 'Total Property Taxes and Charges on Typical House',
-    # --- Property class tax rates ---
-    'Residential Tax Rate':                'Residential Tax Rate',
-    'Utilities Tax Rate':                  'Utilities Tax Rate',
-    'Major Industry Tax Rate':             'Major Industry Tax Rate',
-    'Light Industry Tax Rate':             'Light Industry Tax Rate',
-    'Business/Other Tax Rate':             'Business/Other Tax Rate',
-    'Managed Forest Tax Rate':             'Managed Forest Tax Rate',
-    'Recreation Tax Rate':                 'Recreation Tax Rate',
-    'Farm Tax Rate':                       'Farm Tax Rate',
-    # --- Property class taxable values ---
-    'Residential Taxable Value':           'Residential Taxable Value',
-    'Utilities Taxable Value':             'Utilities Taxable Value',
-    'Major Industry Taxable Value':        'Major Industry Taxable Value',
-    'Light Industry Taxable Value':        'Light Industry Taxable Value',
-    'Business/Other Taxable Value':        'Business/Other Taxable Value',
-    'Managed Forest Taxable Value':        'Managed Forest Taxable Value',
-    'Recreation Taxable Value':            'Recreation Taxable Value',
-    'Farm Taxable Value':                  'Farm Taxable Value',
-    # --- Property class tax multiples ---
-    'Residential Tax Multiple':            'Residential Tax Multiple',
-    'Utilities Tax Multiple':              'Utilities Tax Multiple',
-    'Major Industry Tax Multiple':         'Major Industry Tax Multiple',
-    'Light Industry Tax Multiple':         'Light Industry Tax Multiple',
-    'Business/Other Tax Multiple':         'Business/Other Tax Multiple',
-    'Managed Forest Tax Multiple':         'Managed Forest Tax Multiple',
-    'Recreation Tax Multiple':             'Recreation Tax Multiple',
-    'Farm Tax Multiple':                   'Farm Tax Multiple',
-}
-
-
-# ---------------------------------------------------------------------------
-# Load data
-# ---------------------------------------------------------------------------
-
-def load_data(path: str | Path = 'data.json') -> pd.DataFrame:
+def load_data(path: str | Path | None = None) -> pd.DataFrame:
     """Load data.json into a flat DataFrame.
 
     Top-level scalar fields become columns directly.
     Nested Property Classes are flattened to columns like:
         'Residential Tax Rate', 'Residential Taxable Value', 'Residential Tax Multiple', ...
     """
+    if path is None:
+        here = Path(__file__).parent
+        path = here / "data.json" if (here / "data.json").exists() else Path("data.json")
+
     with open(path) as f:
         records = json.load(f)
 
-    rows = []
-    for r in records:
-        row = {
-            'Year':                             r['Year'],
-            'Municipality':                     r['Municipality'],
-            'Population':                       r.get('Population'),
-            'Total Taxable Value':              r.get('Total Taxable Value'),
-            'Total Taxes Collected':            r.get('Total Taxes Collected'),
-            'Tax per Capita':                   r.get('Tax per Capita'),
-            'Typical House Value':              r.get('Typical House Value'),
-            'School Tax on Typical House':                       r.get('School Tax on Typical House'),
-            'General Municipal Tax on Typical House':            r.get('General Municipal Tax on Typical House'),
-            'Regional District Tax on Typical House':            r.get('Regional District Tax on Typical House'),
-            'Hospital Tax on Typical House':                     r.get('Hospital Tax on Typical House'),
-            'Other Tax on Typical House':                        r.get('Other Tax on Typical House'),
-            'Total Variable Rate Taxes on Typical House':        r.get('Total Variable Rate Taxes on Typical House'),
-            'Total Property Taxes and Charges on Typical House': r.get('Total Property Taxes and Charges on Typical House'),
-        }
-        for cls, vals in (r.get('Property Classes') or {}).items():
-            if vals is None:
-                continue
-            row[f'{cls} Taxable Value'] = vals.get('Taxable Value')
-            row[f'{cls} Tax Rate']      = vals.get('Tax Rate')
-            row[f'{cls} Tax Multiple']  = vals.get('Tax Multiple')
-        rows.append(row)
+    df = pd.json_normalize(records, sep=" ")
 
-    df = pd.DataFrame(rows)
-    df['Year'] = df['Year'].astype(int)
+    # Rename 'Property Classes X Y' -> 'X Y'
+    df.columns = [col.removeprefix("Property Classes ") for col in df.columns]
+
+    df["Year"] = df["Year"].astype(int)
     return df
-
-
-
 
 
 # ---------------------------------------------------------------------------
@@ -113,18 +42,23 @@ def load_data(path: str | Path = 'data.json') -> pd.DataFrame:
 # ---------------------------------------------------------------------------
 
 app_dir = Path(__file__).parent
+plot_df = load_data()
 
-try:
-    app_dir = Path(__file__).parent
-    plot_df = load_data(app_dir / "data.json")
-except (NameError, FileNotFoundError):
-    plot_df = load_data("data.json")
 
-YEAR_MIN = START_YEAR
-YEAR_MAX = END_YEAR
+# Extract config values directly from data.json
+MUNICIPALITIES = sorted(plot_df["Municipality"].unique().tolist())
+START_YEAR = int(plot_df["Year"].min())
+END_YEAR = int(plot_df["Year"].max())
+PROPERTY_CLASSES = [
+    col.replace(" Tax Rate", "")
+    for col in plot_df.columns
+    if col.endswith(" Tax Rate")
+]
 
+# Set some defaults and the plotting variables
 DEFAULT_MUNIS = ["Squamish", "Whistler", "Pemberton"]
 
+# top-level variables
 OVERVIEW_VARS = [
     "Population",
     "Total Taxable Value",
@@ -138,6 +72,12 @@ OVERVIEW_VARS = [
     "Other Tax on Typical House",
     "Total Variable Rate Taxes on Typical House",
     "Total Property Taxes and Charges on Typical House",
+]
+
+# top-level vars + all property-class columns
+PLOT_VARS = OVERVIEW_VARS + [
+    col for col in plot_df.columns
+    if col.endswith((" Tax Rate", " Taxable Value", " Tax Multiple"))
 ]
 
 # ---------------------------------------------------------------------------
@@ -172,7 +112,7 @@ with ui.layout_columns(col_widths=12):
             ui.input_select(
                 "trend_var",
                 None,
-                choices=list(PLOT_VARIABLES.keys()),
+                choices=PLOT_VARS,
                 selected="Tax per Capita",
                 width="auto",
             )
@@ -180,9 +120,9 @@ with ui.layout_columns(col_widths=12):
             ui.input_slider(
                 "years",
                 None,
-                min=YEAR_MIN,
-                max=YEAR_MAX,
-                value=[YEAR_MIN, YEAR_MAX],
+                min=START_YEAR,
+                max=END_YEAR,
+                value=[START_YEAR, END_YEAR],
                 step=1,
                 sep="",
                 width="300px",
@@ -191,7 +131,7 @@ with ui.layout_columns(col_widths=12):
         @render_plotly
         def trend_chart():
             munis = req(input.municipalities())
-            col = PLOT_VARIABLES[input.trend_var()]
+            col = input.trend_var()
             d = (
                 filtered_df()
                 [["Year", "Municipality", col]]
@@ -279,7 +219,7 @@ with ui.layout_columns(col_widths=12):
             ui.input_select(
                 "density_var",
                 None,
-                choices=list(PLOT_VARIABLES.keys()),
+                choices=PLOT_VARS,
                 selected="Tax per Capita",
                 width="auto",
             )
@@ -295,7 +235,7 @@ with ui.layout_columns(col_widths=12):
 
             @render.ui
             def density_avg_boxes():
-                col = PLOT_VARIABLES[input.density_var()]
+                col = input.density_var()
                 year = int(input.density_year())
                 munis = input.municipalities()
 
@@ -340,7 +280,7 @@ with ui.layout_columns(col_widths=12):
         @render_plotly
         def density_chart():
             munis = req(input.municipalities())
-            col = PLOT_VARIABLES[input.density_var()]
+            col = input.density_var()
             year = int(input.density_year())
 
             all_d = plot_df[plot_df["Year"] == year][["Municipality", col]].dropna()
