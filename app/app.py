@@ -10,10 +10,6 @@ from shiny.express import input, render, ui
 from shinywidgets import render_plotly
 
 
-# ---------------------------------------------------------------------------
-# Load data function
-# ---------------------------------------------------------------------------
-
 def load_data(path: str | Path | None = None) -> pd.DataFrame:
     """Load data.json into a flat DataFrame.
 
@@ -29,23 +25,16 @@ def load_data(path: str | Path | None = None) -> pd.DataFrame:
         records = json.load(f)
 
     df = pd.json_normalize(records, sep=" ")
-
-    # Rename 'Property Classes X Y' -> 'X Y'
     df.columns = [col.removeprefix("Property Classes ") for col in df.columns]
-
     df["Year"] = df["Year"].astype(int)
     return df
 
-
-# ---------------------------------------------------------------------------
-# Shared data
-# ---------------------------------------------------------------------------
-
-app_dir = Path(__file__).parent
 plot_df = load_data()
 
+# ---------------------------------------------------------------------------
+# Extract config values 
+# ---------------------------------------------------------------------------
 
-# Extract config values directly from data.json
 MUNICIPALITIES = sorted(plot_df["Municipality"].unique().tolist())
 START_YEAR = int(plot_df["Year"].min())
 END_YEAR = int(plot_df["Year"].max())
@@ -55,10 +44,26 @@ PROPERTY_CLASSES = [
     if col.endswith(" Tax Rate")
 ]
 
-# Set some defaults and the plotting variables
 DEFAULT_MUNIS = ["Squamish", "Whistler", "Pemberton", "West Vancouver", "Lions Bay"]
 
-# top-level variables
+_latest_pop = (
+    plot_df[plot_df["Year"] == END_YEAR][["Municipality", "Population"]]
+    .dropna()
+    .set_index("Municipality")["Population"]
+    .astype(int)
+)
+POP_MIN = int(_latest_pop.min() // 1000 * 1000)
+POP_MAX = int((_latest_pop.max() + 999) // 1000 * 1000)
+
+_latest_thv = (
+    plot_df[plot_df["Year"] == END_YEAR][["Municipality", "Typical House Value"]]
+    .dropna()
+    .set_index("Municipality")["Typical House Value"]
+    .astype(int)
+)
+THV_MIN = int(_latest_thv.min() // 100_000 * 100_000)
+THV_MAX = int((_latest_thv.max() + 99_999) // 100_000 * 100_000)
+
 OVERVIEW_VARS = [
     "Population",
     "Total Taxable Value",
@@ -74,21 +79,52 @@ OVERVIEW_VARS = [
     "Total Property Taxes and Charges on Typical House",
 ]
 
-# top-level vars + all property-class columns
 PLOT_VARS = OVERVIEW_VARS + [
     col for col in plot_df.columns
     if col.endswith((" Tax Rate", " Taxable Value", " Tax Multiple"))
 ]
+
 
 # ---------------------------------------------------------------------------
 # Layout
 # ---------------------------------------------------------------------------
 
 ui.page_opts(title="BC Municipal Tax Dashboard", fillable=True)
-ui.include_css(app_dir / "styles.css")
+ui.include_css(Path(__file__).parent / "styles.css")
 
 with ui.sidebar():
-    ui.h6("Municipalities")
+    ui.h6("Filter municipalies by")
+    ui.input_radio_buttons(
+        "filter_type",
+        "",
+        choices={"none": "Manual Selection", "pop": "Population", "thv": "Typical House Value"},
+        selected="none",
+    )
+    with ui.panel_conditional("input.filter_type === 'pop'"):
+        ui.input_slider(
+            "pop_range",
+            None,
+            min=POP_MIN,
+            max=POP_MAX,
+            value=[20_000, 30_000],
+            step=5000,
+            sep=",",
+            width="100%",
+        )
+    with ui.panel_conditional("input.filter_type === 'thv'"):
+        ui.input_slider(
+            "thv_range",
+            None,
+            min=THV_MIN,
+            max=THV_MAX,
+            value=[1_000_000, 1_200_000],
+            step=100_000,
+            pre="$",
+            sep=",",
+            width="100%",
+        )
+    ui.hr()
+    ui.h6("Selected Municipalities")
     ui.input_selectize(
         "municipalities",
         None,
@@ -97,8 +133,22 @@ with ui.sidebar():
         multiple=True,
         width="100%",
     )
+
     ui.hr()
 
+
+@reactive.effect
+def _sync_muni_filter():
+    filter_type = input.filter_type()
+    if filter_type == "pop":
+        lo, hi = input.pop_range()
+        in_range = _latest_pop[(_latest_pop >= lo) & (_latest_pop <= hi)].index.tolist()
+    elif filter_type == "thv":
+        lo, hi = input.thv_range()
+        in_range = _latest_thv[(_latest_thv >= lo) & (_latest_thv <= hi)].index.tolist()
+    else:
+        return
+    ui.update_selectize("municipalities", selected=sorted(in_range))
 
 
 # ---------------------------------------------------------------------------
@@ -130,7 +180,6 @@ with ui.layout_columns(col_widths=12):
 
         @render_plotly
         def trend_chart():
-            munis = req(input.municipalities())
             col = input.trend_var()
             d = (
                 filtered_df()
@@ -419,3 +468,4 @@ def latest_df():
         return d
     max_yr = min(yr[1], d["Year"].max())
     return d[d["Year"] == max_yr]
+
