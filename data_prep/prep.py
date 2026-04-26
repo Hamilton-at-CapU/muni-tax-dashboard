@@ -54,6 +54,13 @@ OUTPUT_FILE = DATA_DIR / 'data_prep/data.json'
 _AMBIGUOUS = {'Langley', 'North Vancouver'}
 _TYPE_SUFFIX = {'C': ' (City)', 'D': ' (District)'}
 
+# Known municipality name variations across years, mapped to their canonical form.
+_NAME_ALIASES = {
+    "Abbotsford - C": "Abbotsford",
+    "Queen Charlotte": "Daajing Giids",
+    "Northern Rockies - REGM": "Northern Rockies"
+}
+
 def _disambiguate(df: pd.DataFrame, muni_col: int = 0, type_col: int = 1) -> None:
     """Append ' (City)' or ' (District)' to ambiguous municipality names in-place.
 
@@ -94,6 +101,12 @@ def scrape_707(year: int, municipalities: list[str]) -> dict:
     df.iloc[:, 0] = df.iloc[:, 0].ffill()
     df.iloc[:, 1] = df.iloc[:, 1].ffill()
 
+    # Strip leading/trailing whitespace from municipality names
+    df.iloc[:, 0] = df.iloc[:, 0].astype(str).str.strip()
+
+    # Normalise known name variations to their canonical form
+    df.iloc[:, 0] = df.iloc[:, 0].replace(_NAME_ALIASES)
+
     # Append (City)/(District) suffix to ambiguous municipality names, then drop type col.
     _disambiguate(df, muni_col=0, type_col=1)
     df.drop(columns=df.columns[1], inplace=True)
@@ -130,10 +143,13 @@ def scrape_707(year: int, municipalities: list[str]) -> dict:
         else:
             totals = muni_df.iloc[0]
 
-        # Population is on the Residential row in older files, not the Totals row
-        population = _int(totals.get('Population'))
-        if population is None and 'Residential' in muni_df.index:
+        # Population is most reliably on the Residential row; fall back to Totals
+        if 'Residential' in muni_df.index:
             population = _int(muni_df.loc['Residential'].get('Population'))
+        else:
+            population = None
+        if population is None:
+            population = _int(totals.get('Population'))
 
         row = {
             'Population':            population,
