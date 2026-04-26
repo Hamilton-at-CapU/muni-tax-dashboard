@@ -56,7 +56,7 @@ PROPERTY_CLASSES = [
 ]
 
 # Set some defaults and the plotting variables
-DEFAULT_MUNIS = ["Squamish", "Whistler", "Pemberton"]
+DEFAULT_MUNIS = ["Squamish", "Whistler", "Pemberton", "West Vancouver", "Lions Bay"]
 
 # top-level variables
 OVERVIEW_VARS = [
