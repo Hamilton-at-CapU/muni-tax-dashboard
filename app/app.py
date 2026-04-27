@@ -44,7 +44,7 @@ PROPERTY_CLASSES = [
     if col.endswith(" Tax Rate")
 ]
 
-DEFAULT_MUNIS = ["Squamish", "Whistler", "Pemberton", "West Vancouver", "Lions Bay"]
+DEFAULT_MUNIS = ["Squamish", "Whistler", "Pemberton"]
 
 _latest_pop = (
     plot_df[plot_df["Year"] == END_YEAR][["Municipality", "Population"]]
@@ -89,11 +89,16 @@ PLOT_VARS = OVERVIEW_VARS + [
 # Layout
 # ---------------------------------------------------------------------------
 
-ui.page_opts(title="BC Municipal Tax Dashboard", fillable=True)
+ui.page_opts(title="BC Municipal Tax Dashboard", fillable=False)
 ui.include_css(Path(__file__).parent / "styles.css")
 
+
+
 with ui.sidebar():
-    ui.h6("Filter municipalies by")
+    ui.h6(
+    "Explore property tax data for BC municipalities. "
+    ),
+    ui.markdown("Filter municipalies by Population, Typical House Value, or manually select by name below.")
     ui.input_radio_buttons(
         "filter_type",
         "",
@@ -135,6 +140,21 @@ with ui.sidebar():
     )
 
     ui.hr()
+
+    ui.markdown(
+        "Data is sourced from the [Province of BC Tax Rates and Burdens](https://www2.gov.bc.ca/gov/content/governments/local-governments/facts-framework/statistics/tax-rates-tax-burden) Schedule 707 and Schedule 704 reports. "
+    ),
+
+    ui.markdown(
+        "Dashboard by Andrew Hamilton, [Computing & Data Science at Capilano University](https://www.capilanou.ca/programs--courses/search--select/explore-our-areas-of-study/arts--sciences/school-of-science-technology-engineering--mathematics-stem/computing--data-science-department/).  "
+    ),
+    ui.markdown(
+        "Contact via [Linkedin](https://www.linkedin.com/in/andrew-hamilton-phd/) with any questions or comments.  "
+    ),
+    ui.markdown(
+        "Source code available at [Hamilton-at-CapU on GitHub](https://github.com/Hamilton-at-CapU/muni-tax-dashboard).  "
+    ),
+
 
 
 @reactive.effect
