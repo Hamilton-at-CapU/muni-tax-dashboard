@@ -4,7 +4,7 @@ An interactive Shiny for Python dashboard for exploring property tax data across
 
 ## Live App
 
-The app is deployed via Shinylive at the project's GitHub Pages URL, and from [bcmunicipaldata.org](bcmunicipaldata.org)
+The app is deployed via Shinylive at the project's GitHub Pages URL, and from [www.bcmunicipaldata.org](www.bcmunicipaldata.org)
 
 ## Features
 
