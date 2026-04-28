@@ -4,14 +4,13 @@ An interactive Shiny for Python dashboard for exploring property tax data across
 
 ## Live App
 
-The app is deployed via Shinylive at the project's GitHub Pages URL.
+The app is deployed via Shinylive at the project's GitHub Pages URL, and from [bcmunicipaldata.org](bcmunicipaldata.org)
 
 ## Features
 
 - **Trend chart** — plot any variable over time for selected municipalities
-- **Distribution chart** — KDE density plot showing where selected municipalities sit relative to all others in a given year
 - **Property class breakdown** — tax rates, taxable values, and tax multiples by property class
-- **Typical house value analysis** — school, municipal, regional district, hospital, and other taxes on a typical house
+- **Distribution chart** — KDE density plot showing where selected municipalities sit relative to all others in a given year
 - **Sidebar filters** — filter municipalities by population or typical house value using a range slider, or select manually
 
 ## Project Structure
@@ -25,7 +24,7 @@ muni-tax-dashboard/
 ├── data_prep/
 │   ├── prep.py         # Data extraction and processing script
 │   ├── data.json       # Output from prep.py (copied to app/)
-│   └── raw_data/       # Raw Excel files (Schedule 707 and 704)
+│   └── raw_data/       # Raw Excel files from [https://www2.gov.bc.ca/gov/content/governments/local-governments/facts-framework/statistics/tax-rates-tax-burden](Schedule 707 and 704) are not included in GitHub, download them if you need to rebuild data.json
 ├── docs/               # Shinylive build output (GitHub Pages)
 ├── requirements.txt
 └── pyproject.toml
