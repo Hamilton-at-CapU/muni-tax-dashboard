@@ -4,7 +4,7 @@ An interactive Shiny for Python dashboard for exploring property tax data across
 
 ## Live App
 
-The app is deployed via Shinylive at the project's GitHub Pages URL, and from [https://www.bcmunicipaldata.org](www.bcmunicipaldata.org)
+The app is deployed via Shinylive at the project's GitHub Pages URL, and from [www.bcmunicipaldata.org](http://www.bcmunicipaldata.org)
 
 ## Features
 
@@ -24,7 +24,7 @@ muni-tax-dashboard/
 ├── data_prep/
 │   ├── prep.py         # Data extraction and processing script
 │   ├── data.json       # Output from prep.py (copied to app/)
-│   └── raw_data/       # Raw Excel files from [https://www2.gov.bc.ca/gov/content/governments/local-governments/facts-framework/statistics/tax-rates-tax-burden](Schedule 707 and 704) are not included in GitHub, download them if you need to rebuild data.json
+│   └── raw_data/       # Raw Excel files (Schedule 707 and 704) are not included in GitHub, download them from link below if you need to rebuild data.json
 ├── docs/               # Shinylive build output (GitHub Pages)
 ├── requirements.txt
 └── pyproject.toml
