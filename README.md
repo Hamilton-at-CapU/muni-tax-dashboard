@@ -56,7 +56,7 @@ Source: https://www2.gov.bc.ca/gov/content/governments/local-governments/facts-f
 Install dependencies and run the app:
 
 ```bash
-pip install -r requirements.txt
+uv run
 shiny run app/app.py
 ```
 
