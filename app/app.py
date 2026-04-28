@@ -149,7 +149,7 @@ with ui.sidebar():
         "Dashboard by Andrew Hamilton, [Computing & Data Science at Capilano University](https://www.capilanou.ca/programs--courses/search--select/explore-our-areas-of-study/arts--sciences/school-of-science-technology-engineering--mathematics-stem/computing--data-science-department/).  "
     ),
     ui.markdown(
-        "Contact via [Linkedin](https://www.linkedin.com/in/andrew-hamilton-phd/) with any questions or comments.  "
+        "Contact via [Linkedin](https://www.linkedin.com/in/andrew-hamilton-phd/) or [email](mailto:andrew@bcmunicipaldata.org).  "
     ),
     ui.markdown(
         "Source code available at [Hamilton-at-CapU on GitHub](https://github.com/Hamilton-at-CapU/muni-tax-dashboard).  "
