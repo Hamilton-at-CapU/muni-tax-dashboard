@@ -500,7 +500,7 @@ with ui.navset_tab():
                 d = d.dropna(subset=["lat", "lon"])
                 d["Selected"] = d["Municipality"].isin(selected_munis)
 
-                fig = px.scatter_map(
+                fig = px.scatter_mapbox(
                     d,
                     lat="lat",
                     lon="lon",
@@ -512,13 +512,13 @@ with ui.navset_tab():
                     color_continuous_scale="Viridis",
                     zoom=4,
                     center={"lat": 54.0, "lon": -124.0},
-                    map_style="carto-positron",
+                    mapbox_style="carto-positron",
                 )
 
                 # Add a highlighted ring around selected municipalities
                 sel = d[d["Selected"]]
                 if not sel.empty:
-                    fig.add_trace(go.Scattermap(
+                    fig.add_trace(go.Scattermapbox(
                         lat=sel["lat"],
                         lon=sel["lon"],
                         mode="markers",
