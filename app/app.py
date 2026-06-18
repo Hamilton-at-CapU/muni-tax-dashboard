@@ -32,6 +32,12 @@ def load_data(path: str | Path | None = None) -> pd.DataFrame:
 
 plot_df = load_data()
 
+# Compute Tax Revenue (Tax Rate × Taxable Value / 1000) for each property class
+for pc in [col.replace(" Tax Rate", "") for col in plot_df.columns if col.endswith(" Tax Rate")]:
+    plot_df[f"{pc} Tax Revenue"] = (
+        plot_df[f"{pc} Tax Rate"] * plot_df[f"{pc} Taxable Value"] / 1000
+    )
+
 # ---------------------------------------------------------------------------
 # Extract config values 
 # ---------------------------------------------------------------------------
@@ -82,7 +88,7 @@ OVERVIEW_VARS = [
 
 PLOT_VARS = OVERVIEW_VARS + [
     col for col in plot_df.columns
-    if col.endswith((" Tax Rate", " Taxable Value", " Tax Multiple"))
+    if col.endswith((" Tax Rate", " Taxable Value", " Tax Multiple", " Tax Revenue"))
 ]
 
 
