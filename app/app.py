@@ -87,8 +87,19 @@ OVERVIEW_VARS = [
 ]
 
 PLOT_VARS = OVERVIEW_VARS + [
-    col for col in plot_df.columns
-    if col.endswith((" Tax Rate", " Taxable Value", " Tax Multiple", " Tax Revenue"))
+    metric
+    for pc in dict.fromkeys(
+        col.rsplit(" ", 2)[0]
+        for col in plot_df.columns
+        if col.endswith((" Tax Rate", " Taxable Value", " Tax Multiple", " Tax Revenue"))
+    )
+    for metric in [
+        f"{pc} Tax Rate",
+        f"{pc} Taxable Value",
+        f"{pc} Tax Multiple",
+        f"{pc} Tax Revenue",
+    ]
+    if metric in plot_df.columns
 ]
 
 
