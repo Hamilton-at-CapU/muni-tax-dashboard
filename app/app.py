@@ -107,21 +107,10 @@ PLOT_VARS = OVERVIEW_VARS + [
 # Layout
 # ---------------------------------------------------------------------------
 
-ui.page_opts(title="BC Municipal Tax Dashboard", fillable=False)
+ui.page_opts(title="Property Tax Dashboard", fillable=False)
 ui.include_css(Path(__file__).parent / "styles.css")
 
-ui.tags.a(
-    "Council Pay Dashboard",
-    href="https://hamilton-at-capu.github.io/sofi-dashboard/",
-    target="_blank",
-    class_="btn btn-outline-primary btn-sm",
-    style=(
-        "position: fixed;"
-        "top: 8px;"
-        "right: 16px;"
-        "z-index: 9999;"
-    ),
-)
+
 
 with ui.sidebar():
     ui.h6(
