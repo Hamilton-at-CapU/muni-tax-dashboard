@@ -38,6 +38,10 @@ for pc in [col.replace(" Tax Rate", "") for col in plot_df.columns if col.endswi
         plot_df[f"{pc} Tax Rate"] * plot_df[f"{pc} Taxable Value"] / 1000
     )
 
+# Compute Tax Burden (class tax revenue / Total Taxable Value) for each property class
+for pc in [col.replace(" Tax Rate", "") for col in plot_df.columns if col.endswith(" Tax Rate")]:
+    plot_df[f"{pc} Tax Burden"] = plot_df[f"{pc} Tax Revenue"] / plot_df["Total Taxes Collected"]
+
 # ---------------------------------------------------------------------------
 # Extract config values 
 # ---------------------------------------------------------------------------
@@ -91,13 +95,14 @@ PLOT_VARS = OVERVIEW_VARS + [
     for pc in dict.fromkeys(
         col.rsplit(" ", 2)[0]
         for col in plot_df.columns
-        if col.endswith((" Tax Rate", " Taxable Value", " Tax Multiple", " Tax Revenue"))
+        if col.endswith((" Tax Rate", " Taxable Value", " Tax Multiple", " Tax Revenue", " Tax Burden"))
     )
     for metric in [
         f"{pc} Tax Rate",
         f"{pc} Taxable Value",
         f"{pc} Tax Multiple",
         f"{pc} Tax Revenue",
+        f"{pc} Tax Burden",
     ]
     if metric in plot_df.columns
 ]
