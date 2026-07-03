@@ -560,6 +560,84 @@ with ui.navset_tab():
                 )
                 return fig
 
+    with ui.nav_panel("Year Over Year"):
+        with ui.card(full_screen=True, style="height:calc(100vh - 160px)"):
+            with ui.card_header(class_="d-flex align-items-center gap-2"):
+                ui.span("Year-over-year change in: ")
+                ui.input_select(
+                    "yoy_var",
+                    None,
+                    choices=PLOT_VARS,
+                    selected="Tax per Capita",
+                    width="auto",
+                )
+                ui.span(" for years: ")
+                ui.input_slider(
+                    "yoy_years",
+                    None,
+                    min=START_YEAR,
+                    max=END_YEAR,
+                    value=[START_YEAR, END_YEAR],
+                    step=1,
+                    sep="",
+                    width="300px",
+                )
+
+            @render_plotly
+            def yoy_chart():
+                col = input.yoy_var()
+                yr = input.yoy_years()
+                munis = req(input.municipalities())
+
+                d = (
+                    plot_df[plot_df["Municipality"].isin(munis)][["Year", "Municipality", col]]
+                    .dropna()
+                    .sort_values(["Municipality", "Year"])
+                )
+                d["YoY %"] = d.groupby("Municipality")[col].pct_change() * 100
+                d = d[d["Year"].between(yr[0], yr[1])].dropna(subset=["YoY %"])
+
+                fig = px.line(
+                    d, x="Year", y="YoY %", color="Municipality",
+                    markers=True,
+                    color_discrete_sequence=px.colors.qualitative.D3,
+                )
+                fig.add_hline(y=0, line=dict(color="grey", width=1, dash="dash"))
+
+                # Add a dotted horizontal average line per municipality
+                muni_color_map = {
+                    trace.name: trace.line.color
+                    for trace in fig.data
+                    if hasattr(trace, "line") and trace.line and trace.line.color
+                }
+                for muni in munis:
+                    muni_d = d[d["Municipality"] == muni]
+                    if muni_d.empty:
+                        continue
+                    avg = muni_d["YoY %"].mean()
+                    color = muni_color_map.get(muni, "grey")
+                    fig.add_hline(
+                        y=avg,
+                        line=dict(color=color, width=1.5, dash="dot"),
+                        annotation_text=f"{avg:.1f}%",
+                        annotation_position="left",
+                        annotation_font=dict(color=color, size=11),
+                    )
+
+                fig.update_layout(
+                    legend=dict(orientation="h", y=-0.18, x=0.5, xanchor="center"),
+                    margin=dict(l=90, r=10, t=10, b=10),
+                    yaxis_title="Year-over-Year Change (%)",
+                )
+                return fig
+
+            ui.card_footer(
+                ui.span(
+                    "Dotted line is the average change over the selected time period.",
+                    style="font-size: 0.85em; color: #666;",
+                )
+            )
+
 
 # ---------------------------------------------------------------------------
 # Reactive data
