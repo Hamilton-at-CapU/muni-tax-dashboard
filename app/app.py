@@ -38,7 +38,7 @@ for pc in [col.replace(" Tax Rate", "") for col in plot_df.columns if col.endswi
         plot_df[f"{pc} Tax Rate"] * plot_df[f"{pc} Taxable Value"] / 1000
     )
 
-# Compute Tax Burden (class tax revenue / Total Taxable Value) for each property class
+# Compute Tax Burden (class tax revenue / Total Taxes Collected) for each property class
 for pc in [col.replace(" Tax Rate", "") for col in plot_df.columns if col.endswith(" Tax Rate")]:
     plot_df[f"{pc} Tax Burden"] = plot_df[f"{pc} Tax Revenue"] / plot_df["Total Taxes Collected"]
 
