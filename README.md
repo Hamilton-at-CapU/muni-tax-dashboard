@@ -60,6 +60,13 @@ uv run
 shiny run app/app.py
 ```
 
+## Updating github site (https://github.com/Hamilton-at-CapU/muni-tax-dashboard)
+
+Export the app to docs using shinylive
+
+```shinylive export app docs```
+
+
 ## Dependencies
 
 Key packages:
