@@ -105,7 +105,15 @@
         "Tax Rate": 13.18655014038086,
         "Tax Multiple": 2.7297277450561523
       }
-    }
+    },
+    "Typical House Value": 257594,
+    "School Tax on Typical House": 840,
+    "General Municipal Tax on Typical House": 1244,
+    "Regional District Tax on Typical House": 47,
+    "Hospital Tax on Typical House": 92,
+    "Other Tax on Typical House": 24,
+    "Total Variable Rate Taxes on Typical House": 2247,
+    "Total Property Taxes and Charges on Typical House": 2721
   },
   {
     "Year": 2005,
@@ -1567,7 +1575,15 @@
   },
   {
     "Year": 2005,
-    "Municipality": "Daajing Giids"
+    "Municipality": "Daajing Giids",
+    "Typical House Value": 0,
+    "School Tax on Typical House": 0,
+    "General Municipal Tax on Typical House": 0,
+    "Regional District Tax on Typical House": 0,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 0,
+    "Total Variable Rate Taxes on Typical House": 0,
+    "Total Property Taxes and Charges on Typical House": 0
   },
   {
     "Year": 2005,
@@ -3647,7 +3663,15 @@
         "Tax Rate": 4.590000152587891,
         "Tax Multiple": 1.0
       }
-    }
+    },
+    "Typical House Value": 308500,
+    "School Tax on Typical House": 885,
+    "General Municipal Tax on Typical House": 1416,
+    "Regional District Tax on Typical House": 29,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 175,
+    "Total Variable Rate Taxes on Typical House": 2504,
+    "Total Property Taxes and Charges on Typical House": 3144
   },
   {
     "Year": 2005,
@@ -3697,7 +3721,15 @@
         "Tax Rate": 7.7213897705078125,
         "Tax Multiple": 2.2024614810943604
       }
-    }
+    },
+    "Typical House Value": 323829,
+    "School Tax on Typical House": 929,
+    "General Municipal Tax on Typical House": 1135,
+    "Regional District Tax on Typical House": 30,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 183,
+    "Total Variable Rate Taxes on Typical House": 2278,
+    "Total Property Taxes and Charges on Typical House": 2859
   },
   {
     "Year": 2005,
@@ -4675,7 +4707,15 @@
         "Tax Rate": 0.4999000132083893,
         "Tax Multiple": 0.07621240615844727
       }
-    }
+    },
+    "Typical House Value": 201516,
+    "School Tax on Typical House": 700,
+    "General Municipal Tax on Typical House": 1322,
+    "Regional District Tax on Typical House": 188,
+    "Hospital Tax on Typical House": 60,
+    "Other Tax on Typical House": 19,
+    "Total Variable Rate Taxes on Typical House": 2289,
+    "Total Property Taxes and Charges on Typical House": 2735
   },
   {
     "Year": 2005,
@@ -5073,7 +5113,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 513940,
+    "School Tax on Typical House": 1166,
+    "General Municipal Tax on Typical House": 1493,
+    "Regional District Tax on Typical House": 48,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 291,
+    "Total Variable Rate Taxes on Typical House": 2998,
+    "Total Property Taxes and Charges on Typical House": 3491
   },
   {
     "Year": 2005,
@@ -5123,7 +5171,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 586993,
+    "School Tax on Typical House": 1332,
+    "General Municipal Tax on Typical House": 1715,
+    "Regional District Tax on Typical House": 47,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 332,
+    "Total Variable Rate Taxes on Typical House": 3427,
+    "Total Property Taxes and Charges on Typical House": 4161
   },
   {
     "Year": 2005,
@@ -6163,7 +6219,15 @@
         "Tax Rate": 2.8267500400543213,
         "Tax Multiple": 0.6436368227005005
       }
-    }
+    },
+    "Typical House Value": 133755,
+    "School Tax on Typical House": 562,
+    "General Municipal Tax on Typical House": 929,
+    "Regional District Tax on Typical House": 35,
+    "Hospital Tax on Typical House": 110,
+    "Other Tax on Typical House": 12,
+    "Total Variable Rate Taxes on Typical House": 1648,
+    "Total Property Taxes and Charges on Typical House": 2142
   },
   {
     "Year": 2005,
@@ -9009,7 +9073,15 @@
         "Tax Rate": 13.795100212097168,
         "Tax Multiple": 2.9714488983154297
       }
-    }
+    },
+    "Typical House Value": 290653,
+    "School Tax on Typical House": 866,
+    "General Municipal Tax on Typical House": 1349,
+    "Regional District Tax on Typical House": 54,
+    "Hospital Tax on Typical House": 96,
+    "Other Tax on Typical House": 24,
+    "Total Variable Rate Taxes on Typical House": 2389,
+    "Total Property Taxes and Charges on Typical House": 2885
   },
   {
     "Year": 2006,
@@ -10517,7 +10589,15 @@
         "Tax Rate": 2.51,
         "Tax Multiple": 1.0
       }
-    }
+    },
+    "Typical House Value": 102439,
+    "School Tax on Typical House": 634,
+    "General Municipal Tax on Typical House": 257,
+    "Regional District Tax on Typical House": 74,
+    "Hospital Tax on Typical House": 68,
+    "Other Tax on Typical House": 8,
+    "Total Variable Rate Taxes on Typical House": 1042,
+    "Total Property Taxes and Charges on Typical House": 1042
   },
   {
     "Year": 2006,
@@ -12597,7 +12677,15 @@
         "Tax Rate": 4.300000190734863,
         "Tax Multiple": 1.0
       }
-    }
+    },
+    "Typical House Value": 333437,
+    "School Tax on Typical House": 878,
+    "General Municipal Tax on Typical House": 1434,
+    "Regional District Tax on Typical House": 29,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 184,
+    "Total Variable Rate Taxes on Typical House": 2524,
+    "Total Property Taxes and Charges on Typical House": 3176
   },
   {
     "Year": 2006,
@@ -12647,7 +12735,15 @@
         "Tax Rate": 7.912700176239014,
         "Tax Multiple": 2.326033353805542
       }
-    }
+    },
+    "Typical House Value": 354930,
+    "School Tax on Typical House": 934,
+    "General Municipal Tax on Typical House": 1207,
+    "Regional District Tax on Typical House": 30,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 195,
+    "Total Variable Rate Taxes on Typical House": 2367,
+    "Total Property Taxes and Charges on Typical House": 3043
   },
   {
     "Year": 2006,
@@ -13625,7 +13721,15 @@
         "Tax Rate": 0.5,
         "Tax Multiple": 0.0882425606250763
       }
-    }
+    },
+    "Typical House Value": 243319,
+    "School Tax on Typical House": 731,
+    "General Municipal Tax on Typical House": 1379,
+    "Regional District Tax on Typical House": 199,
+    "Hospital Tax on Typical House": 61,
+    "Other Tax on Typical House": 20,
+    "Total Variable Rate Taxes on Typical House": 2390,
+    "Total Property Taxes and Charges on Typical House": 2836
   },
   {
     "Year": 2006,
@@ -14023,7 +14127,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 580748,
+    "School Tax on Typical House": 1198,
+    "General Municipal Tax on Typical House": 1590,
+    "Regional District Tax on Typical House": 50,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 320,
+    "Total Variable Rate Taxes on Typical House": 3158,
+    "Total Property Taxes and Charges on Typical House": 3725
   },
   {
     "Year": 2006,
@@ -14073,7 +14185,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 657215,
+    "School Tax on Typical House": 1356,
+    "General Municipal Tax on Typical House": 1804,
+    "Regional District Tax on Typical House": 51,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 362,
+    "Total Variable Rate Taxes on Typical House": 3572,
+    "Total Property Taxes and Charges on Typical House": 4337
   },
   {
     "Year": 2006,
@@ -15113,7 +15233,15 @@
         "Tax Rate": 6.076320171356201,
         "Tax Multiple": 1.580646276473999
       }
-    }
+    },
+    "Typical House Value": 168719,
+    "School Tax on Typical House": 601,
+    "General Municipal Tax on Typical House": 1024,
+    "Regional District Tax on Typical House": 43,
+    "Hospital Tax on Typical House": 124,
+    "Other Tax on Typical House": 14,
+    "Total Variable Rate Taxes on Typical House": 1806,
+    "Total Property Taxes and Charges on Typical House": 2410
   },
   {
     "Year": 2006,
@@ -17959,7 +18087,15 @@
         "Tax Rate": 15.84391,
         "Tax Multiple": 3.52688811126545
       }
-    }
+    },
+    "Typical House Value": 345656,
+    "School Tax on Typical House": 854,
+    "General Municipal Tax on Typical House": 1553,
+    "Regional District Tax on Typical House": 55,
+    "Hospital Tax on Typical House": 98,
+    "Other Tax on Typical House": 24,
+    "Total Variable Rate Taxes on Typical House": 2583,
+    "Total Property Taxes and Charges on Typical House": 3102
   },
   {
     "Year": 2007,
@@ -19467,7 +19603,15 @@
         "Tax Rate": 2.565,
         "Tax Multiple": 1.001953125
       }
-    }
+    },
+    "Typical House Value": 104417,
+    "School Tax on Typical House": 590,
+    "General Municipal Tax on Typical House": 267,
+    "Regional District Tax on Typical House": 77,
+    "Hospital Tax on Typical House": 62,
+    "Other Tax on Typical House": 44,
+    "Total Variable Rate Taxes on Typical House": 1040,
+    "Total Property Taxes and Charges on Typical House": 1666
   },
   {
     "Year": 2007,
@@ -21547,7 +21691,15 @@
         "Tax Rate": 3.734,
         "Tax Multiple": 1.0
       }
-    }
+    },
+    "Typical House Value": 390731,
+    "School Tax on Typical House": 841,
+    "General Municipal Tax on Typical House": 1459,
+    "Regional District Tax on Typical House": 29,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 171,
+    "Total Variable Rate Taxes on Typical House": 2500,
+    "Total Property Taxes and Charges on Typical House": 3165
   },
   {
     "Year": 2007,
@@ -21597,7 +21749,15 @@
         "Tax Rate": 8.3032,
         "Tax Multiple": 2.84961219026701
       }
-    }
+    },
+    "Typical House Value": 433193,
+    "School Tax on Typical House": 933,
+    "General Municipal Tax on Typical House": 1262,
+    "Regional District Tax on Typical House": 31,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 189,
+    "Total Variable Rate Taxes on Typical House": 2416,
+    "Total Property Taxes and Charges on Typical House": 3121
   },
   {
     "Year": 2007,
@@ -22575,7 +22735,15 @@
         "Tax Rate": 0.5,
         "Tax Multiple": 0.100908173562059
       }
-    }
+    },
+    "Typical House Value": 295422,
+    "School Tax on Typical House": 730,
+    "General Municipal Tax on Typical House": 1464,
+    "Regional District Tax on Typical House": 207,
+    "Hospital Tax on Typical House": 66,
+    "Other Tax on Typical House": 20,
+    "Total Variable Rate Taxes on Typical House": 2486,
+    "Total Property Taxes and Charges on Typical House": 2938
   },
   {
     "Year": 2007,
@@ -22973,7 +23141,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 667713,
+    "School Tax on Typical House": 1161,
+    "General Municipal Tax on Typical House": 1626,
+    "Regional District Tax on Typical House": 50,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 292,
+    "Total Variable Rate Taxes on Typical House": 3128,
+    "Total Property Taxes and Charges on Typical House": 3663
   },
   {
     "Year": 2007,
@@ -23023,7 +23199,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 738838,
+    "School Tax on Typical House": 1285,
+    "General Municipal Tax on Typical House": 1884,
+    "Regional District Tax on Typical House": 49,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 323,
+    "Total Variable Rate Taxes on Typical House": 3541,
+    "Total Property Taxes and Charges on Typical House": 4350
   },
   {
     "Year": 2007,
@@ -24063,7 +24247,15 @@
         "Tax Rate": 8.57021,
         "Tax Multiple": 2.58456476633936
       }
-    }
+    },
+    "Typical House Value": 210638,
+    "School Tax on Typical House": 605,
+    "General Municipal Tax on Typical House": 1105,
+    "Regional District Tax on Typical House": 49,
+    "Hospital Tax on Typical House": 130,
+    "Other Tax on Typical House": 14,
+    "Total Variable Rate Taxes on Typical House": 1903,
+    "Total Property Taxes and Charges on Typical House": 2525
   },
   {
     "Year": 2007,
@@ -26909,7 +27101,15 @@
         "Tax Rate": 16.31881,
         "Tax Multiple": 3.93407295441012
       }
-    }
+    },
+    "Typical House Value": 383494,
+    "School Tax on Typical House": 859,
+    "General Municipal Tax on Typical House": 1591,
+    "Regional District Tax on Typical House": 59,
+    "Hospital Tax on Typical House": 96,
+    "Other Tax on Typical House": 24,
+    "Total Variable Rate Taxes on Typical House": 2629,
+    "Total Property Taxes and Charges on Typical House": 3244
   },
   {
     "Year": 2008,
@@ -28525,7 +28725,15 @@
         "Tax Rate": 4.178,
         "Tax Multiple": 1.6339460305045
       }
-    }
+    },
+    "Typical House Value": 118125,
+    "School Tax on Typical House": 588,
+    "General Municipal Tax on Typical House": 302,
+    "Regional District Tax on Typical House": 82,
+    "Hospital Tax on Typical House": 59,
+    "Other Tax on Typical House": 45,
+    "Total Variable Rate Taxes on Typical House": 1076,
+    "Total Property Taxes and Charges on Typical House": 1449
   },
   {
     "Year": 2008,
@@ -30605,7 +30813,15 @@
         "Tax Rate": 3.447,
         "Tax Multiple": 1.0
       }
-    }
+    },
+    "Typical House Value": 432890,
+    "School Tax on Typical House": 843,
+    "General Municipal Tax on Typical House": 1492,
+    "Regional District Tax on Typical House": 28,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 173,
+    "Total Variable Rate Taxes on Typical House": 2537,
+    "Total Property Taxes and Charges on Typical House": 3268
   },
   {
     "Year": 2008,
@@ -30655,7 +30871,15 @@
         "Tax Rate": 8.77694,
         "Tax Multiple": 3.19515826644096
       }
-    }
+    },
+    "Typical House Value": 487155,
+    "School Tax on Typical House": 949,
+    "General Municipal Tax on Typical House": 1338,
+    "Regional District Tax on Typical House": 32,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 195,
+    "Total Variable Rate Taxes on Typical House": 2513,
+    "Total Property Taxes and Charges on Typical House": 3251
   },
   {
     "Year": 2008,
@@ -31633,7 +31857,15 @@
         "Tax Rate": 0.5,
         "Tax Multiple": 0.105746251295392
       }
-    }
+    },
+    "Typical House Value": 322569,
+    "School Tax on Typical House": 726,
+    "General Municipal Tax on Typical House": 1525,
+    "Regional District Tax on Typical House": 214,
+    "Hospital Tax on Typical House": 68,
+    "Other Tax on Typical House": 20,
+    "Total Variable Rate Taxes on Typical House": 2553,
+    "Total Property Taxes and Charges on Typical House": 3023
   },
   {
     "Year": 2008,
@@ -32031,7 +32263,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 754182,
+    "School Tax on Typical House": 1178,
+    "General Municipal Tax on Typical House": 1720,
+    "Regional District Tax on Typical House": 49,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 302,
+    "Total Variable Rate Taxes on Typical House": 3249,
+    "Total Property Taxes and Charges on Typical House": 3812
   },
   {
     "Year": 2008,
@@ -32081,7 +32321,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 843494,
+    "School Tax on Typical House": 1318,
+    "General Municipal Tax on Typical House": 1979,
+    "Regional District Tax on Typical House": 57,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 337,
+    "Total Variable Rate Taxes on Typical House": 3691,
+    "Total Property Taxes and Charges on Typical House": 4544
   },
   {
     "Year": 2008,
@@ -33121,7 +33369,15 @@
         "Tax Rate": 11.23268,
         "Tax Multiple": 3.55821504483929
       }
-    }
+    },
+    "Typical House Value": 241185,
+    "School Tax on Typical House": 609,
+    "General Municipal Tax on Typical House": 1203,
+    "Regional District Tax on Typical House": 52,
+    "Hospital Tax on Typical House": 128,
+    "Other Tax on Typical House": 15,
+    "Total Variable Rate Taxes on Typical House": 2007,
+    "Total Property Taxes and Charges on Typical House": 2345
   },
   {
     "Year": 2008,
@@ -37583,7 +37839,15 @@
         "Tax Rate": 4.3322,
         "Tax Multiple": 1.66067389887684
       }
-    }
+    },
+    "Typical House Value": 118369,
+    "School Tax on Typical House": 594,
+    "General Municipal Tax on Typical House": 309,
+    "Regional District Tax on Typical House": 96,
+    "Hospital Tax on Typical House": 85,
+    "Other Tax on Typical House": 42,
+    "Total Variable Rate Taxes on Typical House": 1126,
+    "Total Property Taxes and Charges on Typical House": 1986
   },
   {
     "Year": 2009,
@@ -45125,7 +45389,15 @@
         "Tax Rate": 17.94119,
         "Tax Multiple": 3.76021520250161
       }
-    }
+    },
+    "Typical House Value": 377482,
+    "School Tax on Typical House": 886,
+    "General Municipal Tax on Typical House": 1801,
+    "Regional District Tax on Typical House": 60,
+    "Hospital Tax on Typical House": 97,
+    "Other Tax on Typical House": 25,
+    "Total Variable Rate Taxes on Typical House": 2868,
+    "Total Property Taxes and Charges on Typical House": 3743
   },
   {
     "Year": 2010,
@@ -46741,7 +47013,15 @@
         "Tax Rate": 4.3932,
         "Tax Multiple": 1.84464225730601
       }
-    }
+    },
+    "Typical House Value": 135818,
+    "School Tax on Typical House": 619,
+    "General Municipal Tax on Typical House": 323,
+    "Regional District Tax on Typical House": 112,
+    "Hospital Tax on Typical House": 39,
+    "Other Tax on Typical House": 55,
+    "Total Variable Rate Taxes on Typical House": 1148,
+    "Total Property Taxes and Charges on Typical House": 2105
   },
   {
     "Year": 2010,
@@ -48821,7 +49101,15 @@
         "Tax Rate": 3.8844,
         "Tax Multiple": 1.0
       }
-    }
+    },
+    "Typical House Value": 421802,
+    "School Tax on Typical House": 869,
+    "General Municipal Tax on Typical House": 1638,
+    "Regional District Tax on Typical House": 29,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 188,
+    "Total Variable Rate Taxes on Typical House": 2725,
+    "Total Property Taxes and Charges on Typical House": 3522
   },
   {
     "Year": 2010,
@@ -48871,7 +49159,15 @@
         "Tax Rate": 9.3768,
         "Tax Multiple": 2.92814539549699
       }
-    }
+    },
+    "Typical House Value": 466658,
+    "School Tax on Typical House": 962,
+    "General Municipal Tax on Typical House": 1494,
+    "Regional District Tax on Typical House": 32,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 209,
+    "Total Variable Rate Taxes on Typical House": 2697,
+    "Total Property Taxes and Charges on Typical House": 3592
   },
   {
     "Year": 2010,
@@ -49849,7 +50145,15 @@
         "Tax Rate": 0.5,
         "Tax Multiple": 0.0963001483022284
       }
-    }
+    },
+    "Typical House Value": 319994,
+    "School Tax on Typical House": 744,
+    "General Municipal Tax on Typical House": 1661,
+    "Regional District Tax on Typical House": 242,
+    "Hospital Tax on Typical House": 70,
+    "Other Tax on Typical House": 21,
+    "Total Variable Rate Taxes on Typical House": 2739,
+    "Total Property Taxes and Charges on Typical House": 3249
   },
   {
     "Year": 2010,
@@ -50247,7 +50551,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 739726,
+    "School Tax on Typical House": 1205,
+    "General Municipal Tax on Typical House": 1842,
+    "Regional District Tax on Typical House": 51,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 331,
+    "Total Variable Rate Taxes on Typical House": 3428,
+    "Total Property Taxes and Charges on Typical House": 4144
   },
   {
     "Year": 2010,
@@ -50297,7 +50609,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 829762,
+    "School Tax on Typical House": 1351,
+    "General Municipal Tax on Typical House": 2159,
+    "Regional District Tax on Typical House": 58,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 371,
+    "Total Variable Rate Taxes on Typical House": 3938,
+    "Total Property Taxes and Charges on Typical House": 4975
   },
   {
     "Year": 2010,
@@ -50347,7 +50667,15 @@
         "Tax Rate": 0.84424,
         "Tax Multiple": 0.163699646129236
       }
-    }
+    },
+    "Typical House Value": 193773,
+    "School Tax on Typical House": 613,
+    "General Municipal Tax on Typical House": 999,
+    "Regional District Tax on Typical House": 0,
+    "Hospital Tax on Typical House": 15,
+    "Other Tax on Typical House": 13,
+    "Total Variable Rate Taxes on Typical House": 1641,
+    "Total Property Taxes and Charges on Typical House": 2564
   },
   {
     "Year": 2010,
@@ -51383,7 +51711,15 @@
         "Tax Rate": 6.87237,
         "Tax Multiple": 1.72671311522777
       }
-    }
+    },
+    "Typical House Value": 236917,
+    "School Tax on Typical House": 628,
+    "General Municipal Tax on Typical House": 1422,
+    "Regional District Tax on Typical House": 58,
+    "Hospital Tax on Typical House": 118,
+    "Other Tax on Typical House": 16,
+    "Total Variable Rate Taxes on Typical House": 2242,
+    "Total Property Taxes and Charges on Typical House": 2635
   },
   {
     "Year": 2010,
@@ -54283,7 +54619,15 @@
         "Tax Rate": 18.74068,
         "Tax Multiple": 3.92763685976498
       }
-    }
+    },
+    "Typical House Value": 398862,
+    "School Tax on Typical House": 900,
+    "General Municipal Tax on Typical House": 1903,
+    "Regional District Tax on Typical House": 48,
+    "Hospital Tax on Typical House": 95,
+    "Other Tax on Typical House": 25,
+    "Total Variable Rate Taxes on Typical House": 2972,
+    "Total Property Taxes and Charges on Typical House": 3838
   },
   {
     "Year": 2011,
@@ -55899,7 +56243,15 @@
         "Tax Rate": 4.2834,
         "Tax Multiple": 1.80749430331674
       }
-    }
+    },
+    "Typical House Value": 143484,
+    "School Tax on Typical House": 641,
+    "General Municipal Tax on Typical House": 340,
+    "Regional District Tax on Typical House": 123,
+    "Hospital Tax on Typical House": 102,
+    "Other Tax on Typical House": 59,
+    "Total Variable Rate Taxes on Typical House": 1264,
+    "Total Property Taxes and Charges on Typical House": 2248
   },
   {
     "Year": 2011,
@@ -57979,7 +58331,15 @@
         "Tax Rate": 3.697,
         "Tax Multiple": 1.0
       }
-    }
+    },
+    "Typical House Value": 455686,
+    "School Tax on Typical House": 890,
+    "General Municipal Tax on Typical House": 1685,
+    "Regional District Tax on Typical House": 30,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 188,
+    "Total Variable Rate Taxes on Typical House": 2793,
+    "Total Property Taxes and Charges on Typical House": 3636
   },
   {
     "Year": 2011,
@@ -58029,7 +58389,15 @@
         "Tax Rate": 9.6817,
         "Tax Multiple": 3.09379783280448
       }
-    }
+    },
+    "Typical House Value": 501347,
+    "School Tax on Typical House": 980,
+    "General Municipal Tax on Typical House": 1569,
+    "Regional District Tax on Typical House": 33,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 207,
+    "Total Variable Rate Taxes on Typical House": 2788,
+    "Total Property Taxes and Charges on Typical House": 3779
   },
   {
     "Year": 2011,
@@ -59007,7 +59375,15 @@
         "Tax Rate": 0.5,
         "Tax Multiple": 0.0980238393977415
       }
-    }
+    },
+    "Typical House Value": 342842,
+    "School Tax on Typical House": 761,
+    "General Municipal Tax on Typical House": 1749,
+    "Regional District Tax on Typical House": 257,
+    "Hospital Tax on Typical House": 73,
+    "Other Tax on Typical House": 21,
+    "Total Variable Rate Taxes on Typical House": 2862,
+    "Total Property Taxes and Charges on Typical House": 3390
   },
   {
     "Year": 2011,
@@ -59405,7 +59781,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 814484,
+    "School Tax on Typical House": 1245,
+    "General Municipal Tax on Typical House": 1946,
+    "Regional District Tax on Typical House": 54,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 336,
+    "Total Variable Rate Taxes on Typical House": 3580,
+    "Total Property Taxes and Charges on Typical House": 4385
   },
   {
     "Year": 2011,
@@ -59455,7 +59839,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 913877,
+    "School Tax on Typical House": 1397,
+    "General Municipal Tax on Typical House": 2260,
+    "Regional District Tax on Typical House": 61,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 377,
+    "Total Variable Rate Taxes on Typical House": 4094,
+    "Total Property Taxes and Charges on Typical House": 5271
   },
   {
     "Year": 2011,
@@ -59505,7 +59897,15 @@
         "Tax Rate": 0.96663,
         "Tax Multiple": 0.176752937562399
       }
-    }
+    },
+    "Typical House Value": 208449,
+    "School Tax on Typical House": 611,
+    "General Municipal Tax on Typical House": 1140,
+    "Regional District Tax on Typical House": 0,
+    "Hospital Tax on Typical House": 16,
+    "Other Tax on Typical House": 13,
+    "Total Variable Rate Taxes on Typical House": 1781,
+    "Total Property Taxes and Charges on Typical House": 2704
   },
   {
     "Year": 2011,
@@ -60541,7 +60941,15 @@
         "Tax Rate": 5.40175,
         "Tax Multiple": 1.26269591743709
       }
-    }
+    },
+    "Typical House Value": 247111,
+    "School Tax on Typical House": 636,
+    "General Municipal Tax on Typical House": 1512,
+    "Regional District Tax on Typical House": 63,
+    "Hospital Tax on Typical House": 116,
+    "Other Tax on Typical House": 15,
+    "Total Variable Rate Taxes on Typical House": 2343,
+    "Total Property Taxes and Charges on Typical House": 2896
   },
   {
     "Year": 2011,
@@ -63495,7 +63903,15 @@
         "Tax Rate": 19.01085,
         "Tax Multiple": 3.87382807166975
       }
-    }
+    },
+    "Typical House Value": 398228,
+    "School Tax on Typical House": 905,
+    "General Municipal Tax on Typical House": 1954,
+    "Regional District Tax on Typical House": 45,
+    "Hospital Tax on Typical House": 94,
+    "Other Tax on Typical House": 24,
+    "Total Variable Rate Taxes on Typical House": 3022,
+    "Total Property Taxes and Charges on Typical House": 3888
   },
   {
     "Year": 2012,
@@ -65111,7 +65527,15 @@
         "Tax Rate": 4.2059,
         "Tax Multiple": 1.77479112161364
       }
-    }
+    },
+    "Typical House Value": 145866,
+    "School Tax on Typical House": 686,
+    "General Municipal Tax on Typical House": 346,
+    "Regional District Tax on Typical House": 135,
+    "Hospital Tax on Typical House": 113,
+    "Other Tax on Typical House": 58,
+    "Total Variable Rate Taxes on Typical House": 1339,
+    "Total Property Taxes and Charges on Typical House": 2177
   },
   {
     "Year": 2012,
@@ -67191,7 +67615,15 @@
         "Tax Rate": 3.725,
         "Tax Multiple": 1.0
       }
-    }
+    },
+    "Typical House Value": 458913,
+    "School Tax on Typical House": 896,
+    "General Municipal Tax on Typical House": 1709,
+    "Regional District Tax on Typical House": 26,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 176,
+    "Total Variable Rate Taxes on Typical House": 2808,
+    "Total Property Taxes and Charges on Typical House": 3696
   },
   {
     "Year": 2012,
@@ -67241,7 +67673,15 @@
         "Tax Rate": 9.8854,
         "Tax Multiple": 3.08939989624287
       }
-    }
+    },
+    "Typical House Value": 506454,
+    "School Tax on Typical House": 988,
+    "General Municipal Tax on Typical House": 1621,
+    "Regional District Tax on Typical House": 29,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 195,
+    "Total Variable Rate Taxes on Typical House": 2833,
+    "Total Property Taxes and Charges on Typical House": 3885
   },
   {
     "Year": 2012,
@@ -68219,7 +68659,15 @@
         "Tax Rate": 0.4999,
         "Tax Multiple": 0.0926478492132624
       }
-    }
+    },
+    "Typical House Value": 338939,
+    "School Tax on Typical House": 763,
+    "General Municipal Tax on Typical House": 1829,
+    "Regional District Tax on Typical House": 273,
+    "Hospital Tax on Typical House": 74,
+    "Other Tax on Typical House": 20,
+    "Total Variable Rate Taxes on Typical House": 2959,
+    "Total Property Taxes and Charges on Typical House": 3509
   },
   {
     "Year": 2012,
@@ -68617,7 +69065,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 861797,
+    "School Tax on Typical House": 1278,
+    "General Municipal Tax on Typical House": 2051,
+    "Regional District Tax on Typical House": 50,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 331,
+    "Total Variable Rate Taxes on Typical House": 3711,
+    "Total Property Taxes and Charges on Typical House": 4582
   },
   {
     "Year": 2012,
@@ -68667,7 +69123,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 990375,
+    "School Tax on Typical House": 1469,
+    "General Municipal Tax on Typical House": 2342,
+    "Regional District Tax on Typical House": 58,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 381,
+    "Total Variable Rate Taxes on Typical House": 4250,
+    "Total Property Taxes and Charges on Typical House": 5544
   },
   {
     "Year": 2012,
@@ -68717,7 +69181,15 @@
         "Tax Rate": 0.88478,
         "Tax Multiple": 0.175629644921552
       }
-    }
+    },
+    "Typical House Value": 230688,
+    "School Tax on Typical House": 620,
+    "General Municipal Tax on Typical House": 1162,
+    "Regional District Tax on Typical House": 0,
+    "Hospital Tax on Typical House": 20,
+    "Other Tax on Typical House": 71,
+    "Total Variable Rate Taxes on Typical House": 1874,
+    "Total Property Taxes and Charges on Typical House": 2797
   },
   {
     "Year": 2012,
@@ -72715,7 +73187,15 @@
         "Tax Rate": 19.04649,
         "Tax Multiple": 3.75137674308674
       }
-    }
+    },
+    "Typical House Value": 400170,
+    "School Tax on Typical House": 928,
+    "General Municipal Tax on Typical House": 2032,
+    "Regional District Tax on Typical House": 45,
+    "Hospital Tax on Typical House": 94,
+    "Other Tax on Typical House": 24,
+    "Total Variable Rate Taxes on Typical House": 3122,
+    "Total Property Taxes and Charges on Typical House": 3994
   },
   {
     "Year": 2013,
@@ -74331,7 +74811,15 @@
         "Tax Rate": 4.3688,
         "Tax Multiple": 1.81579384871155
       }
-    }
+    },
+    "Typical House Value": 152378,
+    "School Tax on Typical House": 723,
+    "General Municipal Tax on Typical House": 367,
+    "Regional District Tax on Typical House": 139,
+    "Hospital Tax on Typical House": 110,
+    "Other Tax on Typical House": 64,
+    "Total Variable Rate Taxes on Typical House": 1403,
+    "Total Property Taxes and Charges on Typical House": 2242
   },
   {
     "Year": 2013,
@@ -76411,7 +76899,15 @@
         "Tax Rate": 3.8061,
         "Tax Multiple": 1.0
       }
-    }
+    },
+    "Typical House Value": 459042,
+    "School Tax on Typical House": 905,
+    "General Municipal Tax on Typical House": 1747,
+    "Regional District Tax on Typical House": 27,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 177,
+    "Total Variable Rate Taxes on Typical House": 2856,
+    "Total Property Taxes and Charges on Typical House": 3768
   },
   {
     "Year": 2013,
@@ -76461,7 +76957,15 @@
         "Tax Rate": 10.0465,
         "Tax Multiple": 3.06828940536909
       }
-    }
+    },
+    "Typical House Value": 513681,
+    "School Tax on Typical House": 1012,
+    "General Municipal Tax on Typical House": 1682,
+    "Regional District Tax on Typical House": 30,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 198,
+    "Total Variable Rate Taxes on Typical House": 2923,
+    "Total Property Taxes and Charges on Typical House": 4007
   },
   {
     "Year": 2013,
@@ -77845,7 +78349,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 891975,
+    "School Tax on Typical House": 1324,
+    "General Municipal Tax on Typical House": 2185,
+    "Regional District Tax on Typical House": 56,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 345,
+    "Total Variable Rate Taxes on Typical House": 3910,
+    "Total Property Taxes and Charges on Typical House": 4819
   },
   {
     "Year": 2013,
@@ -77895,7 +78407,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 1016052,
+    "School Tax on Typical House": 1508,
+    "General Municipal Tax on Typical House": 2408,
+    "Regional District Tax on Typical House": 63,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 393,
+    "Total Variable Rate Taxes on Typical House": 4371,
+    "Total Property Taxes and Charges on Typical House": 5783
   },
   {
     "Year": 2013,
@@ -77945,7 +78465,15 @@
         "Tax Rate": 0.92287,
         "Tax Multiple": 0.184749512036435
       }
-    }
+    },
+    "Typical House Value": 244667,
+    "School Tax on Typical House": 635,
+    "General Municipal Tax on Typical House": 1222,
+    "Regional District Tax on Typical House": 0,
+    "Hospital Tax on Typical House": 19,
+    "Other Tax on Typical House": 15,
+    "Total Variable Rate Taxes on Typical House": 1891,
+    "Total Property Taxes and Charges on Typical House": 2425
   },
   {
     "Year": 2013,
@@ -78981,7 +79509,15 @@
         "Tax Rate": 5.5894,
         "Tax Multiple": 1.02410852684772
       }
-    }
+    },
+    "Typical House Value": 224699,
+    "School Tax on Typical House": 623,
+    "General Municipal Tax on Typical House": 1633,
+    "Regional District Tax on Typical House": 86,
+    "Hospital Tax on Typical House": 112,
+    "Other Tax on Typical House": 14,
+    "Total Variable Rate Taxes on Typical House": 2468,
+    "Total Property Taxes and Charges on Typical House": 3167
   },
   {
     "Year": 2013,
@@ -81935,7 +82471,15 @@
         "Tax Rate": 19.00413,
         "Tax Multiple": 3.67379356607235
       }
-    }
+    },
+    "Typical House Value": 398535,
+    "School Tax on Typical House": 926,
+    "General Municipal Tax on Typical House": 2062,
+    "Regional District Tax on Typical House": 44,
+    "Hospital Tax on Typical House": 92,
+    "Other Tax on Typical House": 25,
+    "Total Variable Rate Taxes on Typical House": 3148,
+    "Total Property Taxes and Charges on Typical House": 3847
   },
   {
     "Year": 2014,
@@ -83551,7 +84095,15 @@
         "Tax Rate": 5.1006,
         "Tax Multiple": 2.07958576262894
       }
-    }
+    },
+    "Typical House Value": 148076,
+    "School Tax on Typical House": 715,
+    "General Municipal Tax on Typical House": 363,
+    "Regional District Tax on Typical House": 141,
+    "Hospital Tax on Typical House": 78,
+    "Other Tax on Typical House": 65,
+    "Total Variable Rate Taxes on Typical House": 1362,
+    "Total Property Taxes and Charges on Typical House": 2201
   },
   {
     "Year": 2014,
@@ -85631,7 +86183,15 @@
         "Tax Rate": 3.8857,
         "Tax Multiple": 1.0
       }
-    }
+    },
+    "Typical House Value": 462426,
+    "School Tax on Typical House": 907,
+    "General Municipal Tax on Typical House": 1797,
+    "Regional District Tax on Typical House": 28,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 182,
+    "Total Variable Rate Taxes on Typical House": 2915,
+    "Total Property Taxes and Charges on Typical House": 3848
   },
   {
     "Year": 2014,
@@ -85681,7 +86241,15 @@
         "Tax Rate": 10.2475,
         "Tax Multiple": 3.061422639142
       }
-    }
+    },
+    "Typical House Value": 524021,
+    "School Tax on Typical House": 1028,
+    "General Municipal Tax on Typical House": 1754,
+    "Regional District Tax on Typical House": 31,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 206,
+    "Total Variable Rate Taxes on Typical House": 3020,
+    "Total Property Taxes and Charges on Typical House": 4146
   },
   {
     "Year": 2014,
@@ -86659,7 +87227,15 @@
         "Tax Rate": 0.5,
         "Tax Multiple": 0.0842275491467749
       }
-    }
+    },
+    "Typical House Value": 325354,
+    "School Tax on Typical House": 760,
+    "General Municipal Tax on Typical House": 1931,
+    "Regional District Tax on Typical House": 297,
+    "Hospital Tax on Typical House": 73,
+    "Other Tax on Typical House": 20,
+    "Total Variable Rate Taxes on Typical House": 3082,
+    "Total Property Taxes and Charges on Typical House": 3697
   },
   {
     "Year": 2014,
@@ -87057,7 +87633,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 902181,
+    "School Tax on Typical House": 1346,
+    "General Municipal Tax on Typical House": 2252,
+    "Regional District Tax on Typical House": 52,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 355,
+    "Total Variable Rate Taxes on Typical House": 4005,
+    "Total Property Taxes and Charges on Typical House": 4959
   },
   {
     "Year": 2014,
@@ -87107,7 +87691,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 1017997,
+    "School Tax on Typical House": 1519,
+    "General Municipal Tax on Typical House": 2485,
+    "Regional District Tax on Typical House": 59,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 401,
+    "Total Variable Rate Taxes on Typical House": 4464,
+    "Total Property Taxes and Charges on Typical House": 5937
   },
   {
     "Year": 2014,
@@ -87157,7 +87749,15 @@
         "Tax Rate": 0.91468,
         "Tax Multiple": 0.183086130627114
       }
-    }
+    },
+    "Typical House Value": 249488,
+    "School Tax on Typical House": 654,
+    "General Municipal Tax on Typical House": 1246,
+    "Regional District Tax on Typical House": 0,
+    "Hospital Tax on Typical House": 21,
+    "Other Tax on Typical House": 15,
+    "Total Variable Rate Taxes on Typical House": 1936,
+    "Total Property Taxes and Charges on Typical House": 2470
   },
   {
     "Year": 2014,
@@ -88193,7 +88793,15 @@
         "Tax Rate": 5.27569,
         "Tax Multiple": 0.898373603020184
       }
-    }
+    },
+    "Typical House Value": 217221,
+    "School Tax on Typical House": 612,
+    "General Municipal Tax on Typical House": 1663,
+    "Regional District Tax on Typical House": 94,
+    "Hospital Tax on Typical House": 110,
+    "Other Tax on Typical House": 13,
+    "Total Variable Rate Taxes on Typical House": 2493,
+    "Total Property Taxes and Charges on Typical House": 3193
   },
   {
     "Year": 2014,
@@ -92771,7 +93379,15 @@
         "Tax Rate": 5.2106,
         "Tax Multiple": 2.12460754332314
       }
-    }
+    },
+    "Typical House Value": 148962,
+    "School Tax on Typical House": 710,
+    "General Municipal Tax on Typical House": 365,
+    "Regional District Tax on Typical House": 140,
+    "Hospital Tax on Typical House": 71,
+    "Other Tax on Typical House": 67,
+    "Total Variable Rate Taxes on Typical House": 1354,
+    "Total Property Taxes and Charges on Typical House": 2193
   },
   {
     "Year": 2015,
@@ -94851,7 +95467,15 @@
         "Tax Rate": 3.8794,
         "Tax Multiple": 1.0
       }
-    }
+    },
+    "Typical House Value": 486818,
+    "School Tax on Typical House": 930,
+    "General Municipal Tax on Typical House": 1889,
+    "Regional District Tax on Typical House": 28,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 184,
+    "Total Variable Rate Taxes on Typical House": 3031,
+    "Total Property Taxes and Charges on Typical House": 3965
   },
   {
     "Year": 2015,
@@ -94901,7 +95525,15 @@
         "Tax Rate": 10.4664,
         "Tax Multiple": 3.11305434103685
       }
-    }
+    },
+    "Typical House Value": 547297,
+    "School Tax on Typical House": 1046,
+    "General Municipal Tax on Typical House": 1840,
+    "Regional District Tax on Typical House": 31,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 206,
+    "Total Variable Rate Taxes on Typical House": 3123,
+    "Total Property Taxes and Charges on Typical House": 4301
   },
   {
     "Year": 2015,
@@ -95879,7 +96511,15 @@
         "Tax Rate": 0.5,
         "Tax Multiple": 0.0844509002465966
       }
-    }
+    },
+    "Typical House Value": 331136,
+    "School Tax on Typical House": 764,
+    "General Municipal Tax on Typical House": 1961,
+    "Regional District Tax on Typical House": 319,
+    "Hospital Tax on Typical House": 74,
+    "Other Tax on Typical House": 20,
+    "Total Variable Rate Taxes on Typical House": 3137,
+    "Total Property Taxes and Charges on Typical House": 3776
   },
   {
     "Year": 2015,
@@ -96277,7 +96917,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 962308,
+    "School Tax on Typical House": 1385,
+    "General Municipal Tax on Typical House": 2419,
+    "Regional District Tax on Typical House": 56,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 363,
+    "Total Variable Rate Taxes on Typical House": 4223,
+    "Total Property Taxes and Charges on Typical House": 5205
   },
   {
     "Year": 2015,
@@ -96327,7 +96975,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 1087243,
+    "School Tax on Typical House": 1565,
+    "General Municipal Tax on Typical House": 2581,
+    "Regional District Tax on Typical House": 62,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 410,
+    "Total Variable Rate Taxes on Typical House": 4618,
+    "Total Property Taxes and Charges on Typical House": 6135
   },
   {
     "Year": 2015,
@@ -96377,7 +97033,15 @@
         "Tax Rate": 0.97958,
         "Tax Multiple": 0.195076779693757
       }
-    }
+    },
+    "Typical House Value": 240097,
+    "School Tax on Typical House": 642,
+    "General Municipal Tax on Typical House": 1206,
+    "Regional District Tax on Typical House": 0,
+    "Hospital Tax on Typical House": 20,
+    "Other Tax on Typical House": 14,
+    "Total Variable Rate Taxes on Typical House": 1882,
+    "Total Property Taxes and Charges on Typical House": 3005
   },
   {
     "Year": 2015,
@@ -97413,7 +98077,15 @@
         "Tax Rate": 5.08101,
         "Tax Multiple": 0.803903854490683
       }
-    }
+    },
+    "Typical House Value": 217069,
+    "School Tax on Typical House": 613,
+    "General Municipal Tax on Typical House": 1731,
+    "Regional District Tax on Typical House": 99,
+    "Hospital Tax on Typical House": 52,
+    "Other Tax on Typical House": 13,
+    "Total Variable Rate Taxes on Typical House": 2508,
+    "Total Property Taxes and Charges on Typical House": 3218
   },
   {
     "Year": 2015,
@@ -100367,7 +101039,15 @@
         "Tax Rate": 18.85498,
         "Tax Multiple": 3.76193725508974
       }
-    }
+    },
+    "Typical House Value": 428986,
+    "School Tax on Typical House": 927,
+    "General Municipal Tax on Typical House": 2150,
+    "Regional District Tax on Typical House": 52,
+    "Hospital Tax on Typical House": 90,
+    "Other Tax on Typical House": 23,
+    "Total Variable Rate Taxes on Typical House": 3243,
+    "Total Property Taxes and Charges on Typical House": 3943
   },
   {
     "Year": 2016,
@@ -101983,7 +102663,15 @@
         "Tax Rate": 7.147,
         "Tax Multiple": 2.84877232142857
       }
-    }
+    },
+    "Typical House Value": 149846,
+    "School Tax on Typical House": 712,
+    "General Municipal Tax on Typical House": 376,
+    "Regional District Tax on Typical House": 137,
+    "Hospital Tax on Typical House": 68,
+    "Other Tax on Typical House": 66,
+    "Total Variable Rate Taxes on Typical House": 1359,
+    "Total Property Taxes and Charges on Typical House": 2197
   },
   {
     "Year": 2016,
@@ -104063,7 +104751,15 @@
         "Tax Rate": 3.6028,
         "Tax Multiple": 1.0
       }
-    }
+    },
+    "Typical House Value": 543808,
+    "School Tax on Typical House": 963,
+    "General Municipal Tax on Typical House": 1959,
+    "Regional District Tax on Typical House": 30,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 184,
+    "Total Variable Rate Taxes on Typical House": 3136,
+    "Total Property Taxes and Charges on Typical House": 4057
   },
   {
     "Year": 2016,
@@ -104113,7 +104809,15 @@
         "Tax Rate": 10.6681,
         "Tax Multiple": 3.30016086122626
       }
-    }
+    },
+    "Typical House Value": 596845,
+    "School Tax on Typical House": 1057,
+    "General Municipal Tax on Typical House": 1929,
+    "Regional District Tax on Typical House": 31,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 202,
+    "Total Variable Rate Taxes on Typical House": 3219,
+    "Total Property Taxes and Charges on Typical House": 4404
   },
   {
     "Year": 2016,
@@ -105091,7 +105795,15 @@
         "Tax Rate": 0.4999,
         "Tax Multiple": 0.0878589757109213
       }
-    }
+    },
+    "Typical House Value": 348363,
+    "School Tax on Typical House": 764,
+    "General Municipal Tax on Typical House": 1982,
+    "Regional District Tax on Typical House": 341,
+    "Hospital Tax on Typical House": 76,
+    "Other Tax on Typical House": 19,
+    "Total Variable Rate Taxes on Typical House": 3183,
+    "Total Property Taxes and Charges on Typical House": 3860
   },
   {
     "Year": 2016,
@@ -105489,7 +106201,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 1140767,
+    "School Tax on Typical House": 1485,
+    "General Municipal Tax on Typical House": 2674,
+    "Regional District Tax on Typical House": 61,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 385,
+    "Total Variable Rate Taxes on Typical House": 4605,
+    "Total Property Taxes and Charges on Typical House": 5616
   },
   {
     "Year": 2016,
@@ -105539,7 +106259,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 1281302,
+    "School Tax on Typical House": 1668,
+    "General Municipal Tax on Typical House": 2708,
+    "Regional District Tax on Typical House": 67,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 433,
+    "Total Variable Rate Taxes on Typical House": 4876,
+    "Total Property Taxes and Charges on Typical House": 6417
   },
   {
     "Year": 2016,
@@ -106633,7 +107361,15 @@
         "Tax Rate": 5.78967,
         "Tax Multiple": 0.903173924709377
       }
-    }
+    },
+    "Typical House Value": 221517,
+    "School Tax on Typical House": 607,
+    "General Municipal Tax on Typical House": 1755,
+    "Regional District Tax on Typical House": 121,
+    "Hospital Tax on Typical House": 55,
+    "Other Tax on Typical House": 12,
+    "Total Variable Rate Taxes on Typical House": 2551,
+    "Total Property Taxes and Charges on Typical House": 3269
   },
   {
     "Year": 2016,
@@ -109587,7 +110323,15 @@
         "Tax Rate": 19.15824,
         "Tax Multiple": 4.96345463306959
       }
-    }
+    },
+    "Typical House Value": 587353,
+    "School Tax on Typical House": 993,
+    "General Municipal Tax on Typical House": 2267,
+    "Regional District Tax on Typical House": 59,
+    "Hospital Tax on Typical House": 99,
+    "Other Tax on Typical House": 25,
+    "Total Variable Rate Taxes on Typical House": 3444,
+    "Total Property Taxes and Charges on Typical House": 4186
   },
   {
     "Year": 2017,
@@ -111203,7 +111947,15 @@
         "Tax Rate": 7.9265,
         "Tax Multiple": 3.15394715900048
       }
-    }
+    },
+    "Typical House Value": 157323,
+    "School Tax on Typical House": 714,
+    "General Municipal Tax on Typical House": 395,
+    "Regional District Tax on Typical House": 142,
+    "Hospital Tax on Typical House": 113,
+    "Other Tax on Typical House": 61,
+    "Total Variable Rate Taxes on Typical House": 1425,
+    "Total Property Taxes and Charges on Typical House": 2290
   },
   {
     "Year": 2017,
@@ -113341,7 +114093,15 @@
         "Tax Rate": 10.8451,
         "Tax Multiple": 4.36598228663446
       }
-    }
+    },
+    "Typical House Value": 813562,
+    "School Tax on Typical House": 1126,
+    "General Municipal Tax on Typical House": 2021,
+    "Regional District Tax on Typical House": 35,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 214,
+    "Total Variable Rate Taxes on Typical House": 3395,
+    "Total Property Taxes and Charges on Typical House": 4609
   },
   {
     "Year": 2017,
@@ -114319,7 +115079,15 @@
         "Tax Rate": 0.5,
         "Tax Multiple": 0.0983361523030327
       }
-    }
+    },
+    "Typical House Value": 400630,
+    "School Tax on Typical House": 763,
+    "General Municipal Tax on Typical House": 2037,
+    "Regional District Tax on Typical House": 364,
+    "Hospital Tax on Typical House": 80,
+    "Other Tax on Typical House": 17,
+    "Total Variable Rate Taxes on Typical House": 3261,
+    "Total Property Taxes and Charges on Typical House": 3980
   },
   {
     "Year": 2017,
@@ -114717,7 +115485,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 1598641,
+    "School Tax on Typical House": 1635,
+    "General Municipal Tax on Typical House": 2892,
+    "Regional District Tax on Typical House": 70,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 420,
+    "Total Variable Rate Taxes on Typical House": 5017,
+    "Total Property Taxes and Charges on Typical House": 6048
   },
   {
     "Year": 2017,
@@ -114825,7 +115601,15 @@
         "Tax Rate": 1.01502,
         "Tax Multiple": 0.204326400463802
       }
-    }
+    },
+    "Typical House Value": 155242,
+    "School Tax on Typical House": 554,
+    "General Municipal Tax on Typical House": 771,
+    "Regional District Tax on Typical House": 0,
+    "Hospital Tax on Typical House": 8,
+    "Other Tax on Typical House": 47,
+    "Total Variable Rate Taxes on Typical House": 1380,
+    "Total Property Taxes and Charges on Typical House": 2503
   },
   {
     "Year": 2017,
@@ -115861,7 +116645,15 @@
         "Tax Rate": 6.01279,
         "Tax Multiple": 1.0
       }
-    }
+    },
+    "Typical House Value": 252699,
+    "School Tax on Typical House": 618,
+    "General Municipal Tax on Typical House": 1854,
+    "Regional District Tax on Typical House": 151,
+    "Hospital Tax on Typical House": 37,
+    "Other Tax on Typical House": 11,
+    "Total Variable Rate Taxes on Typical House": 2672,
+    "Total Property Taxes and Charges on Typical House": 3501
   },
   {
     "Year": 2017,
@@ -118815,7 +119607,15 @@
         "Tax Rate": 19.64405,
         "Tax Multiple": 5.85253984805601
       }
-    }
+    },
+    "Typical House Value": 688379,
+    "School Tax on Typical House": 1031,
+    "General Municipal Tax on Typical House": 2311,
+    "Regional District Tax on Typical House": 60,
+    "Hospital Tax on Typical House": 101,
+    "Other Tax on Typical House": 28,
+    "Total Variable Rate Taxes on Typical House": 3531,
+    "Total Property Taxes and Charges on Typical House": 4276
   },
   {
     "Year": 2018,
@@ -120431,7 +121231,15 @@
         "Tax Rate": 8.1643,
         "Tax Multiple": 3.2104994101455
       }
-    }
+    },
+    "Typical House Value": 160893,
+    "School Tax on Typical House": 728,
+    "General Municipal Tax on Typical House": 409,
+    "Regional District Tax on Typical House": 145,
+    "Hospital Tax on Typical House": 101,
+    "Other Tax on Typical House": 62,
+    "Total Variable Rate Taxes on Typical House": 1445,
+    "Total Property Taxes and Charges on Typical House": 2312
   },
   {
     "Year": 2018,
@@ -122569,7 +123377,15 @@
         "Tax Rate": 11.0064,
         "Tax Multiple": 5.06250862425831
       }
-    }
+    },
+    "Typical House Value": 942948,
+    "School Tax on Typical House": 1170,
+    "General Municipal Tax on Typical House": 2050,
+    "Regional District Tax on Typical House": 41,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 238,
+    "Total Variable Rate Taxes on Typical House": 3499,
+    "Total Property Taxes and Charges on Typical House": 4731
   },
   {
     "Year": 2018,
@@ -123547,7 +124363,15 @@
         "Tax Rate": 0.5,
         "Tax Multiple": 0.11158970696543
       }
-    }
+    },
+    "Typical House Value": 464403,
+    "School Tax on Typical House": 794,
+    "General Municipal Tax on Typical House": 2081,
+    "Regional District Tax on Typical House": 405,
+    "Hospital Tax on Typical House": 82,
+    "Other Tax on Typical House": 19,
+    "Total Variable Rate Taxes on Typical House": 3380,
+    "Total Property Taxes and Charges on Typical House": 4203
   },
   {
     "Year": 2018,
@@ -123945,7 +124769,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 1656356,
+    "School Tax on Typical House": 1601,
+    "General Municipal Tax on Typical House": 2788,
+    "Regional District Tax on Typical House": 74,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 417,
+    "Total Variable Rate Taxes on Typical House": 4880,
+    "Total Property Taxes and Charges on Typical House": 5939
   },
   {
     "Year": 2018,
@@ -124053,7 +124885,15 @@
         "Tax Rate": 1.12933,
         "Tax Multiple": 0.224525135888474
       }
-    }
+    },
+    "Typical House Value": 142119,
+    "School Tax on Typical House": 554,
+    "General Municipal Tax on Typical House": 715,
+    "Regional District Tax on Typical House": 0,
+    "Hospital Tax on Typical House": 5,
+    "Other Tax on Typical House": 42,
+    "Total Variable Rate Taxes on Typical House": 1316,
+    "Total Property Taxes and Charges on Typical House": 2439
   },
   {
     "Year": 2018,
@@ -125089,7 +125929,15 @@
         "Tax Rate": 6.18903,
         "Tax Multiple": 1.1892489647685
       }
-    }
+    },
+    "Typical House Value": 305300,
+    "School Tax on Typical House": 664,
+    "General Municipal Tax on Typical House": 1924,
+    "Regional District Tax on Typical House": 170,
+    "Hospital Tax on Typical House": 42,
+    "Other Tax on Typical House": 12,
+    "Total Variable Rate Taxes on Typical House": 2812,
+    "Total Property Taxes and Charges on Typical House": 3653
   },
   {
     "Year": 2018,
@@ -128043,7 +128891,15 @@
         "Tax Rate": 20.17033,
         "Tax Multiple": 6.5242999511575
       }
-    }
+    },
+    "Typical House Value": 750887,
+    "School Tax on Typical House": 1052,
+    "General Municipal Tax on Typical House": 2321,
+    "Regional District Tax on Typical House": 63,
+    "Hospital Tax on Typical House": 98,
+    "Other Tax on Typical House": 29,
+    "Total Variable Rate Taxes on Typical House": 3565,
+    "Total Property Taxes and Charges on Typical House": 4309
   },
   {
     "Year": 2019,
@@ -129659,7 +130515,15 @@
         "Tax Rate": 2.7844,
         "Tax Multiple": 1.0
       }
-    }
+    },
+    "Typical House Value": 176256,
+    "School Tax on Typical House": 718,
+    "General Municipal Tax on Typical House": 491,
+    "Regional District Tax on Typical House": 167,
+    "Hospital Tax on Typical House": 114,
+    "Other Tax on Typical House": 67,
+    "Total Variable Rate Taxes on Typical House": 1556,
+    "Total Property Taxes and Charges on Typical House": 2709
   },
   {
     "Year": 2019,
@@ -131797,7 +132661,15 @@
         "Tax Rate": 11.3345,
         "Tax Multiple": 5.41258774652595
       }
-    }
+    },
+    "Typical House Value": 1015301,
+    "School Tax on Typical House": 1202,
+    "General Municipal Tax on Typical House": 2126,
+    "Regional District Tax on Typical House": 43,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 265,
+    "Total Variable Rate Taxes on Typical House": 3636,
+    "Total Property Taxes and Charges on Typical House": 4980
   },
   {
     "Year": 2019,
@@ -133181,7 +134053,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 1619905,
+    "School Tax on Typical House": 1559,
+    "General Municipal Tax on Typical House": 2742,
+    "Regional District Tax on Typical House": 70,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 422,
+    "Total Variable Rate Taxes on Typical House": 4794,
+    "Total Property Taxes and Charges on Typical House": 5899
   },
   {
     "Year": 2019,
@@ -133289,7 +134169,15 @@
         "Tax Rate": 1.23531,
         "Tax Multiple": 0.235008865315689
       }
-    }
+    },
+    "Typical House Value": 108799,
+    "School Tax on Typical House": 490,
+    "General Municipal Tax on Typical House": 572,
+    "Regional District Tax on Typical House": 0,
+    "Hospital Tax on Typical House": 5,
+    "Other Tax on Typical House": 31,
+    "Total Variable Rate Taxes on Typical House": 1097,
+    "Total Property Taxes and Charges on Typical House": 2221
   },
   {
     "Year": 2019,
@@ -134325,7 +135213,15 @@
         "Tax Rate": 7.7363,
         "Tax Multiple": 1.51014074059615
       }
-    }
+    },
+    "Typical House Value": 344487,
+    "School Tax on Typical House": 708,
+    "General Municipal Tax on Typical House": 2015,
+    "Regional District Tax on Typical House": 235,
+    "Hospital Tax on Typical House": 46,
+    "Other Tax on Typical House": 13,
+    "Total Variable Rate Taxes on Typical House": 3018,
+    "Total Property Taxes and Charges on Typical House": 3885
   },
   {
     "Year": 2019,
@@ -137279,7 +138175,15 @@
         "Tax Rate": 20.54083,
         "Tax Multiple": 6.278623282541914
       }
-    }
+    },
+    "Typical House Value": 733282,
+    "School Tax on Typical House": 1102,
+    "General Municipal Tax on Typical House": 2399,
+    "Regional District Tax on Typical House": 69,
+    "Hospital Tax on Typical House": 95,
+    "Other Tax on Typical House": 31,
+    "Total Variable Rate Taxes on Typical House": 3696,
+    "Total Property Taxes and Charges on Typical House": 4430
   },
   {
     "Year": 2020,
@@ -138895,7 +139799,15 @@
         "Tax Rate": 2.063,
         "Tax Multiple": 1.0
       }
-    }
+    },
+    "Typical House Value": 229369,
+    "School Tax on Typical House": 846,
+    "General Municipal Tax on Typical House": 473,
+    "Regional District Tax on Typical House": 218,
+    "Hospital Tax on Typical House": 135,
+    "Other Tax on Typical House": 83,
+    "Total Variable Rate Taxes on Typical House": 1755,
+    "Total Property Taxes and Charges on Typical House": 2883
   },
   {
     "Year": 2020,
@@ -140929,11 +141841,119 @@
   },
   {
     "Year": 2020,
-    "Municipality": "Langley (City)"
+    "Municipality": "Langley (City)",
+    "Population": 27774,
+    "Total Taxable Value": 8328959626,
+    "Total Taxes Collected": 30312555,
+    "Tax per Capita": 1091,
+    "Property Classes": {
+      "Residential": {
+        "Taxable Value": 5999452203,
+        "Tax Rate": 2.4665,
+        "Tax Multiple": 1.0
+      },
+      "Utilities": {
+        "Taxable Value": 4812980,
+        "Tax Rate": 40.0,
+        "Tax Multiple": 16.217311980539225
+      },
+      "Major Industry": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      },
+      "Light Industry": {
+        "Taxable Value": 288408400,
+        "Tax Rate": 6.1664,
+        "Tax Multiple": 2.500060814919927
+      },
+      "Business/Other": {
+        "Taxable Value": 2024255603,
+        "Tax Rate": 6.413,
+        "Tax Multiple": 2.6000405432799516
+      },
+      "Managed Forest": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      },
+      "Recreation": {
+        "Taxable Value": 12018500,
+        "Tax Rate": 6.413,
+        "Tax Multiple": 2.6000405432799516
+      },
+      "Farm": {
+        "Taxable Value": 11936,
+        "Tax Rate": 2.4665,
+        "Tax Multiple": 1.0
+      }
+    },
+    "Typical House Value": 857982,
+    "School Tax on Typical House": 1095,
+    "General Municipal Tax on Typical House": 2116,
+    "Regional District Tax on Typical House": 44,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 253,
+    "Total Variable Rate Taxes on Typical House": 3508,
+    "Total Property Taxes and Charges on Typical House": 4643
   },
   {
     "Year": 2020,
-    "Municipality": "Langley (District)"
+    "Municipality": "Langley (District)",
+    "Population": 133302,
+    "Total Taxable Value": 48454402241,
+    "Total Taxes Collected": 145925825,
+    "Tax per Capita": 1095,
+    "Property Classes": {
+      "Residential": {
+        "Taxable Value": 40556737467,
+        "Tax Rate": 2.2394,
+        "Tax Multiple": 1.0
+      },
+      "Utilities": {
+        "Taxable Value": 53702263,
+        "Tax Rate": 26.4379,
+        "Tax Multiple": 11.805796195409485
+      },
+      "Major Industry": {
+        "Taxable Value": 65054400,
+        "Tax Rate": 5.0023,
+        "Tax Multiple": 2.2337679735643476
+      },
+      "Light Industry": {
+        "Taxable Value": 2534262687,
+        "Tax Rate": 5.5102,
+        "Tax Multiple": 2.4605697954809327
+      },
+      "Business/Other": {
+        "Taxable Value": 5102953851,
+        "Tax Rate": 7.098,
+        "Tax Multiple": 3.169598999732071
+      },
+      "Managed Forest": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      },
+      "Recreation": {
+        "Taxable Value": 75150000,
+        "Tax Rate": 3.9925,
+        "Tax Multiple": 1.7828436188264716
+      },
+      "Farm": {
+        "Taxable Value": 66541571,
+        "Tax Rate": 11.5509,
+        "Tax Multiple": 5.1580334018040555
+      }
+    },
+    "Typical House Value": 968824,
+    "School Tax on Typical House": 1236,
+    "General Municipal Tax on Typical House": 2170,
+    "Regional District Tax on Typical House": 49,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 285,
+    "Total Variable Rate Taxes on Typical House": 3740,
+    "Total Property Taxes and Charges on Typical House": 5116
   },
   {
     "Year": 2020,
@@ -142217,11 +143237,119 @@
   },
   {
     "Year": 2020,
-    "Municipality": "North Vancouver (City)"
+    "Municipality": "North Vancouver (City)",
+    "Population": 58985,
+    "Total Taxable Value": 25437241454,
+    "Total Taxes Collected": 63158525,
+    "Tax per Capita": 1071,
+    "Property Classes": {
+      "Residential": {
+        "Taxable Value": 20835341233,
+        "Tax Rate": 1.87205,
+        "Tax Multiple": 1.0
+      },
+      "Utilities": {
+        "Taxable Value": 9352925,
+        "Tax Rate": 40.0,
+        "Tax Multiple": 21.366950669052642
+      },
+      "Major Industry": {
+        "Taxable Value": 295515000,
+        "Tax Rate": 27.5,
+        "Tax Multiple": 14.689778584973691
+      },
+      "Light Industry": {
+        "Taxable Value": 118099900,
+        "Tax Rate": 5.27568,
+        "Tax Multiple": 2.8181298576426914
+      },
+      "Business/Other": {
+        "Taxable Value": 4162776894,
+        "Tax Rate": 5.27568,
+        "Tax Multiple": 2.8181298576426914
+      },
+      "Managed Forest": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      },
+      "Recreation": {
+        "Taxable Value": 16155500,
+        "Tax Rate": 1.69873,
+        "Tax Multiple": 0.9074170027509949
+      },
+      "Farm": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      }
+    },
+    "Typical House Value": 1460127,
+    "School Tax on Typical House": 1538,
+    "General Municipal Tax on Typical House": 2733,
+    "Regional District Tax on Typical House": 76,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 430,
+    "Total Variable Rate Taxes on Typical House": 4777,
+    "Total Property Taxes and Charges on Typical House": 5917
   },
   {
     "Year": 2020,
-    "Municipality": "North Vancouver (District)"
+    "Municipality": "North Vancouver (District)",
+    "Population": 89767,
+    "Total Taxable Value": 45165506251,
+    "Total Taxes Collected": 104892061,
+    "Tax per Capita": 1168,
+    "Property Classes": {
+      "Residential": {
+        "Taxable Value": 40314765930,
+        "Tax Rate": 1.85845,
+        "Tax Multiple": 1.0
+      },
+      "Utilities": {
+        "Taxable Value": 5849791,
+        "Tax Rate": 40.0,
+        "Tax Multiple": 21.523312437784174
+      },
+      "Major Industry": {
+        "Taxable Value": 695506830,
+        "Tax Rate": 11.68395,
+        "Tax Multiple": 6.28693265893621
+      },
+      "Light Industry": {
+        "Taxable Value": 155177000,
+        "Tax Rate": 6.1522,
+        "Tax Multiple": 3.310393069493395
+      },
+      "Business/Other": {
+        "Taxable Value": 3912133200,
+        "Tax Rate": 4.43528,
+        "Tax Multiple": 2.386547929726385
+      },
+      "Managed Forest": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      },
+      "Recreation": {
+        "Taxable Value": 82073500,
+        "Tax Rate": 3.98847,
+        "Tax Multiple": 2.146127148968226
+      },
+      "Farm": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      }
+    },
+    "Typical House Value": 1602424,
+    "School Tax on Typical House": 1687,
+    "General Municipal Tax on Typical House": 2978,
+    "Regional District Tax on Typical House": 82,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 472,
+    "Total Variable Rate Taxes on Typical House": 5219,
+    "Total Property Taxes and Charges on Typical House": 6973
   },
   {
     "Year": 2020,
@@ -142271,7 +143399,15 @@
         "Tax Rate": 1.27966,
         "Tax Multiple": 0.23669442399535362
       }
-    }
+    },
+    "Typical House Value": 107451,
+    "School Tax on Typical House": 484,
+    "General Municipal Tax on Typical House": 581,
+    "Regional District Tax on Typical House": 0,
+    "Hospital Tax on Typical House": 4,
+    "Other Tax on Typical House": 32,
+    "Total Variable Rate Taxes on Typical House": 1101,
+    "Total Property Taxes and Charges on Typical House": 2225
   },
   {
     "Year": 2020,
@@ -146215,7 +147351,15 @@
         "Tax Rate": 20.93241,
         "Tax Multiple": 6.5971238212899
       }
-    }
+    },
+    "Typical House Value": 784933,
+    "School Tax on Typical House": 1137,
+    "General Municipal Tax on Typical House": 2491,
+    "Regional District Tax on Typical House": 72,
+    "Hospital Tax on Typical House": 97,
+    "Other Tax on Typical House": 32,
+    "Total Variable Rate Taxes on Typical House": 3829,
+    "Total Property Taxes and Charges on Typical House": 4616
   },
   {
     "Year": 2021,
@@ -147831,7 +148975,15 @@
         "Tax Rate": 2.0126,
         "Tax Multiple": 1.0
       }
-    }
+    },
+    "Typical House Value": 249995,
+    "School Tax on Typical House": 876,
+    "General Municipal Tax on Typical House": 503,
+    "Regional District Tax on Typical House": 225,
+    "Hospital Tax on Typical House": 143,
+    "Other Tax on Typical House": 88,
+    "Total Variable Rate Taxes on Typical House": 1835,
+    "Total Property Taxes and Charges on Typical House": 3036
   },
   {
     "Year": 2021,
@@ -149865,11 +151017,119 @@
   },
   {
     "Year": 2021,
-    "Municipality": "Langley (City)"
+    "Municipality": "Langley (City)",
+    "Population": 28957,
+    "Total Taxable Value": 8713958238,
+    "Total Taxes Collected": 31945255,
+    "Tax per Capita": 1103,
+    "Property Classes": {
+      "Residential": {
+        "Taxable Value": 6283918903,
+        "Tax Rate": 2.5285,
+        "Tax Multiple": 1.0
+      },
+      "Utilities": {
+        "Taxable Value": 5082405,
+        "Tax Rate": 40.0,
+        "Tax Multiple": 15.819655922483685
+      },
+      "Major Industry": {
+        "Taxable Value": 0,
+        "Tax Rate": 5.7649,
+        "Tax Multiple": 2.2799683606881547
+      },
+      "Light Industry": {
+        "Taxable Value": 328286600,
+        "Tax Rate": 5.7649,
+        "Tax Multiple": 2.2799683606881547
+      },
+      "Business/Other": {
+        "Taxable Value": 2085025590,
+        "Tax Rate": 6.4223,
+        "Tax Multiple": 2.539964405774174
+      },
+      "Managed Forest": {
+        "Taxable Value": 0,
+        "Tax Rate": 6.9533,
+        "Tax Multiple": 2.749970338145145
+      },
+      "Recreation": {
+        "Taxable Value": 11632800,
+        "Tax Rate": 6.9533,
+        "Tax Multiple": 2.749970338145145
+      },
+      "Farm": {
+        "Taxable Value": 11936,
+        "Tax Rate": 2.5285,
+        "Tax Multiple": 1.0
+      }
+    },
+    "Typical House Value": 878124,
+    "School Tax on Typical House": 1082,
+    "General Municipal Tax on Typical House": 2220,
+    "Regional District Tax on Typical House": 50,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 263,
+    "Total Variable Rate Taxes on Typical House": 3615,
+    "Total Property Taxes and Charges on Typical House": 4801
   },
   {
     "Year": 2021,
-    "Municipality": "Langley (District)"
+    "Municipality": "Langley (District)",
+    "Population": 137399,
+    "Total Taxable Value": 51974539530,
+    "Total Taxes Collected": 154303839,
+    "Tax per Capita": 1123,
+    "Property Classes": {
+      "Residential": {
+        "Taxable Value": 43371524624,
+        "Tax Rate": 2.2144,
+        "Tax Multiple": 1.0
+      },
+      "Utilities": {
+        "Taxable Value": 55759578,
+        "Tax Rate": 26.6473,
+        "Tax Multiple": 12.033643424855493
+      },
+      "Major Industry": {
+        "Taxable Value": 73735900,
+        "Tax Rate": 4.6141,
+        "Tax Multiple": 2.0836795520231215
+      },
+      "Light Industry": {
+        "Taxable Value": 2900822788,
+        "Tax Rate": 5.1414,
+        "Tax Multiple": 2.32180274566474
+      },
+      "Business/Other": {
+        "Taxable Value": 5417020541,
+        "Tax Rate": 7.0413,
+        "Tax Multiple": 3.179777817919075
+      },
+      "Managed Forest": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      },
+      "Recreation": {
+        "Taxable Value": 87682200,
+        "Tax Rate": 4.1227,
+        "Tax Multiple": 1.8617684248554913
+      },
+      "Farm": {
+        "Taxable Value": 67993899,
+        "Tax Rate": 12.0664,
+        "Tax Multiple": 5.449060693641618
+      }
+    },
+    "Typical House Value": 1029974,
+    "School Tax on Typical House": 1270,
+    "General Municipal Tax on Typical House": 2281,
+    "Regional District Tax on Typical House": 57,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 309,
+    "Total Variable Rate Taxes on Typical House": 3917,
+    "Total Property Taxes and Charges on Typical House": 5324
   },
   {
     "Year": 2021,
@@ -151153,11 +152413,119 @@
   },
   {
     "Year": 2021,
-    "Municipality": "North Vancouver (City)"
+    "Municipality": "North Vancouver (City)",
+    "Population": 59576,
+    "Total Taxable Value": 26499379510,
+    "Total Taxes Collected": 73538955,
+    "Tax per Capita": 1234,
+    "Property Classes": {
+      "Residential": {
+        "Taxable Value": 21877700333,
+        "Tax Rate": 1.86077,
+        "Tax Multiple": 1.0
+      },
+      "Utilities": {
+        "Taxable Value": 10002575,
+        "Tax Rate": 40.0,
+        "Tax Multiple": 21.496477264788233
+      },
+      "Major Industry": {
+        "Taxable Value": 319911000,
+        "Tax Rate": 27.5,
+        "Tax Multiple": 14.77882811954191
+      },
+      "Light Industry": {
+        "Taxable Value": 116542400,
+        "Tax Rate": 5.50341,
+        "Tax Multiple": 2.957598198595205
+      },
+      "Business/Other": {
+        "Taxable Value": 4128669000,
+        "Tax Rate": 5.50341,
+        "Tax Multiple": 2.957598198595205
+      },
+      "Managed Forest": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      },
+      "Recreation": {
+        "Taxable Value": 46554200,
+        "Tax Rate": 1.82369,
+        "Tax Multiple": 0.9800727655755413
+      },
+      "Farm": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      }
+    },
+    "Typical House Value": 1547793,
+    "School Tax on Typical House": 1582,
+    "General Municipal Tax on Typical House": 2880,
+    "Regional District Tax on Typical House": 88,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 464,
+    "Total Variable Rate Taxes on Typical House": 5014,
+    "Total Property Taxes and Charges on Typical House": 6229
   },
   {
     "Year": 2021,
-    "Municipality": "North Vancouver (District)"
+    "Municipality": "North Vancouver (District)",
+    "Population": 91790,
+    "Total Taxable Value": 47631454258,
+    "Total Taxes Collected": 109472324,
+    "Tax per Capita": 1193,
+    "Property Classes": {
+      "Residential": {
+        "Taxable Value": 42885987930,
+        "Tax Rate": 1.82503,
+        "Tax Multiple": 1.0
+      },
+      "Utilities": {
+        "Taxable Value": 6049296,
+        "Tax Rate": 40.0,
+        "Tax Multiple": 21.917447932362755
+      },
+      "Major Industry": {
+        "Taxable Value": 644268031,
+        "Tax Rate": 13.5942,
+        "Tax Multiple": 7.448754267053145
+      },
+      "Light Industry": {
+        "Taxable Value": 146683100,
+        "Tax Rate": 6.40817,
+        "Tax Multiple": 3.5112683079182263
+      },
+      "Business/Other": {
+        "Taxable Value": 3866220001,
+        "Tax Rate": 4.69564,
+        "Tax Multiple": 2.5729111302279963
+      },
+      "Managed Forest": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      },
+      "Recreation": {
+        "Taxable Value": 82245900,
+        "Tax Rate": 4.09036,
+        "Tax Multiple": 2.2412563081154833
+      },
+      "Farm": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      }
+    },
+    "Typical House Value": 1703097,
+    "School Tax on Typical House": 1741,
+    "General Municipal Tax on Typical House": 3108,
+    "Regional District Tax on Typical House": 95,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 511,
+    "Total Variable Rate Taxes on Typical House": 5455,
+    "Total Property Taxes and Charges on Typical House": 7282
   },
   {
     "Year": 2021,
@@ -151207,7 +152575,15 @@
         "Tax Rate": 1.33391,
         "Tax Multiple": 0.23501916046337487
       }
-    }
+    },
+    "Typical House Value": 119228,
+    "School Tax on Typical House": 537,
+    "General Municipal Tax on Typical House": 677,
+    "Regional District Tax on Typical House": 0,
+    "Hospital Tax on Typical House": 5,
+    "Other Tax on Typical House": 35,
+    "Total Variable Rate Taxes on Typical House": 1254,
+    "Total Property Taxes and Charges on Typical House": 2378
   },
   {
     "Year": 2021,
@@ -155151,7 +156527,15 @@
         "Tax Rate": 21.53285,
         "Tax Multiple": 8.709220116323278
       }
-    }
+    },
+    "Typical House Value": 1073791,
+    "School Tax on Typical House": 1263,
+    "General Municipal Tax on Typical House": 2655,
+    "Regional District Tax on Typical House": 77,
+    "Hospital Tax on Typical House": 103,
+    "Other Tax on Typical House": 38,
+    "Total Variable Rate Taxes on Typical House": 4136,
+    "Total Property Taxes and Charges on Typical House": 4996
   },
   {
     "Year": 2022,
@@ -158809,11 +160193,119 @@
   },
   {
     "Year": 2022,
-    "Municipality": "Langley (City)"
+    "Municipality": "Langley (City)",
+    "Population": 28957,
+    "Total Taxable Value": 11041477287,
+    "Total Taxes Collected": 33847201,
+    "Tax per Capita": 1169,
+    "Property Classes": {
+      "Residential": {
+        "Taxable Value": 8228558303,
+        "Tax Rate": 2.0625,
+        "Tax Multiple": 1.0
+      },
+      "Utilities": {
+        "Taxable Value": 5839455,
+        "Tax Rate": 40.0,
+        "Tax Multiple": 19.393939393939394
+      },
+      "Major Industry": {
+        "Taxable Value": 0,
+        "Tax Rate": 4.9604,
+        "Tax Multiple": 2.405042424242424
+      },
+      "Light Industry": {
+        "Taxable Value": 405600900,
+        "Tax Rate": 4.9604,
+        "Tax Multiple": 2.405042424242424
+      },
+      "Business/Other": {
+        "Taxable Value": 2387541289,
+        "Tax Rate": 5.8885,
+        "Tax Multiple": 2.855030303030303
+      },
+      "Managed Forest": {
+        "Taxable Value": 0,
+        "Tax Rate": 6.2495,
+        "Tax Multiple": 3.0300606060606063
+      },
+      "Recreation": {
+        "Taxable Value": 13925400,
+        "Tax Rate": 6.2495,
+        "Tax Multiple": 3.0300606060606063
+      },
+      "Farm": {
+        "Taxable Value": 11936,
+        "Tax Rate": 2.0625,
+        "Tax Multiple": 1.0
+      }
+    },
+    "Typical House Value": 1211033,
+    "School Tax on Typical House": 1240,
+    "General Municipal Tax on Typical House": 2498,
+    "Regional District Tax on Typical House": 64,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 316,
+    "Total Variable Rate Taxes on Typical House": 4118,
+    "Total Property Taxes and Charges on Typical House": 5375
   },
   {
     "Year": 2022,
-    "Municipality": "Langley (District)"
+    "Municipality": "Langley (District)",
+    "Population": 137399,
+    "Total Taxable Value": 68265100254,
+    "Total Taxes Collected": 163054416,
+    "Tax per Capita": 1187,
+    "Property Classes": {
+      "Residential": {
+        "Taxable Value": 57845122958,
+        "Tax Rate": 1.7572,
+        "Tax Multiple": 1.0
+      },
+      "Utilities": {
+        "Taxable Value": 58907331,
+        "Tax Rate": 25.2213,
+        "Tax Multiple": 14.353118597769177
+      },
+      "Major Industry": {
+        "Taxable Value": 86917600,
+        "Tax Rate": 4.0399,
+        "Tax Multiple": 2.2990553152743
+      },
+      "Light Industry": {
+        "Taxable Value": 3491883100,
+        "Tax Rate": 4.4533,
+        "Tax Multiple": 2.5343159572046434
+      },
+      "Business/Other": {
+        "Taxable Value": 6592263076,
+        "Tax Rate": 6.1557,
+        "Tax Multiple": 3.5031299795128614
+      },
+      "Managed Forest": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      },
+      "Recreation": {
+        "Taxable Value": 122829600,
+        "Tax Rate": 3.0359,
+        "Tax Multiple": 1.7276917823810607
+      },
+      "Farm": {
+        "Taxable Value": 67176589,
+        "Tax Rate": 12.4166,
+        "Tax Multiple": 7.066127930798999
+      }
+    },
+    "Typical House Value": 1353926,
+    "School Tax on Typical House": 1387,
+    "General Municipal Tax on Typical House": 2379,
+    "Regional District Tax on Typical House": 70,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 353,
+    "Total Variable Rate Taxes on Typical House": 4189,
+    "Total Property Taxes and Charges on Typical House": 5624
   },
   {
     "Year": 2022,
@@ -160097,11 +161589,119 @@
   },
   {
     "Year": 2022,
-    "Municipality": "North Vancouver (City)"
+    "Municipality": "North Vancouver (City)",
+    "Population": 59576,
+    "Total Taxable Value": 30291273363,
+    "Total Taxes Collected": 76839460,
+    "Tax per Capita": 1290,
+    "Property Classes": {
+      "Residential": {
+        "Taxable Value": 25445534831,
+        "Tax Rate": 1.68313,
+        "Tax Multiple": 1.0
+      },
+      "Utilities": {
+        "Taxable Value": 9331430,
+        "Tax Rate": 40.0,
+        "Tax Multiple": 23.76524689120864
+      },
+      "Major Industry": {
+        "Taxable Value": 338654000,
+        "Tax Rate": 27.50001,
+        "Tax Multiple": 16.338613179017663
+      },
+      "Light Industry": {
+        "Taxable Value": 144358400,
+        "Tax Rate": 5.38604,
+        "Tax Multiple": 3.200014259148135
+      },
+      "Business/Other": {
+        "Taxable Value": 4335197500,
+        "Tax Rate": 5.38604,
+        "Tax Multiple": 3.200014259148135
+      },
+      "Managed Forest": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      },
+      "Recreation": {
+        "Taxable Value": 18197200,
+        "Tax Rate": 1.88133,
+        "Tax Multiple": 1.1177567983459389
+      },
+      "Farm": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      }
+    },
+    "Typical House Value": 1875885,
+    "School Tax on Typical House": 1648,
+    "General Municipal Tax on Typical House": 3157,
+    "Regional District Tax on Typical House": 99,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 490,
+    "Total Variable Rate Taxes on Typical House": 5394,
+    "Total Property Taxes and Charges on Typical House": 6712
   },
   {
     "Year": 2022,
-    "Municipality": "North Vancouver (District)"
+    "Municipality": "North Vancouver (District)",
+    "Population": 91790,
+    "Total Taxable Value": 56999856973,
+    "Total Taxes Collected": 113541096,
+    "Tax per Capita": 1237,
+    "Property Classes": {
+      "Residential": {
+        "Taxable Value": 51796862832,
+        "Tax Rate": 1.57023,
+        "Tax Multiple": 1.0
+      },
+      "Utilities": {
+        "Taxable Value": 5804009,
+        "Tax Rate": 40.0,
+        "Tax Multiple": 25.473975150137242
+      },
+      "Major Industry": {
+        "Taxable Value": 684392131,
+        "Tax Rate": 12.89402,
+        "Tax Multiple": 8.211548626634315
+      },
+      "Light Industry": {
+        "Taxable Value": 166529400,
+        "Tax Rate": 6.04467,
+        "Tax Multiple": 3.8495443342695017
+      },
+      "Business/Other": {
+        "Taxable Value": 4262227801,
+        "Tax Rate": 4.39453,
+        "Tax Multiple": 2.798653700413315
+      },
+      "Managed Forest": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      },
+      "Recreation": {
+        "Taxable Value": 84040800,
+        "Tax Rate": 4.12954,
+        "Tax Multiple": 2.6298949835374437
+      },
+      "Farm": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      }
+    },
+    "Typical House Value": 2068420,
+    "School Tax on Typical House": 1818,
+    "General Municipal Tax on Typical House": 3248,
+    "Regional District Tax on Typical House": 108,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 540,
+    "Total Variable Rate Taxes on Typical House": 5714,
+    "Total Property Taxes and Charges on Typical House": 7634
   },
   {
     "Year": 2022,
@@ -160151,7 +161751,15 @@
         "Tax Rate": 1.25306,
         "Tax Multiple": 0.23347798462063044
       }
-    }
+    },
+    "Typical House Value": 152993,
+    "School Tax on Typical House": 613,
+    "General Municipal Tax on Typical House": 821,
+    "Regional District Tax on Typical House": 0,
+    "Hospital Tax on Typical House": 11,
+    "Other Tax on Typical House": 36,
+    "Total Variable Rate Taxes on Typical House": 1481,
+    "Total Property Taxes and Charges on Typical House": 2678
   },
   {
     "Year": 2022,
@@ -164095,7 +165703,15 @@
         "Tax Rate": 28.3515,
         "Tax Multiple": 11.926275539177952
       }
-    }
+    },
+    "Typical House Value": 1156473,
+    "School Tax on Typical House": 1326,
+    "General Municipal Tax on Typical House": 2749,
+    "Regional District Tax on Typical House": 74,
+    "Hospital Tax on Typical House": 101,
+    "Other Tax on Typical House": 39,
+    "Total Variable Rate Taxes on Typical House": 4289,
+    "Total Property Taxes and Charges on Typical House": 5148
   },
   {
     "Year": 2023,
@@ -167753,11 +169369,119 @@
   },
   {
     "Year": 2023,
-    "Municipality": "Langley (City)"
+    "Municipality": "Langley (City)",
+    "Population": 30084,
+    "Total Taxable Value": 13100696356,
+    "Total Taxes Collected": 38138446,
+    "Tax per Capita": 1268,
+    "Property Classes": {
+      "Residential": {
+        "Taxable Value": 9750564403,
+        "Tax Rate": 1.9915,
+        "Tax Multiple": 1.0
+      },
+      "Utilities": {
+        "Taxable Value": 7499400,
+        "Tax Rate": 40.0,
+        "Tax Multiple": 20.08536279186543
+      },
+      "Major Industry": {
+        "Taxable Value": 0,
+        "Tax Rate": 4.1024,
+        "Tax Multiple": 2.0599548079337184
+      },
+      "Light Industry": {
+        "Taxable Value": 551965900,
+        "Tax Rate": 4.1024,
+        "Tax Multiple": 2.0599548079337184
+      },
+      "Business/Other": {
+        "Taxable Value": 2774286849,
+        "Tax Rate": 5.596,
+        "Tax Multiple": 2.809942254581973
+      },
+      "Managed Forest": {
+        "Taxable Value": 0,
+        "Tax Rate": 6.6116,
+        "Tax Multiple": 3.3199096158674366
+      },
+      "Recreation": {
+        "Taxable Value": 16379800,
+        "Tax Rate": 6.6116,
+        "Tax Multiple": 3.3199096158674366
+      },
+      "Farm": {
+        "Taxable Value": 0,
+        "Tax Rate": 1.9915,
+        "Tax Multiple": 1.0
+      }
+    },
+    "Typical House Value": 1402905,
+    "School Tax on Typical House": 1395,
+    "General Municipal Tax on Typical House": 2794,
+    "Regional District Tax on Typical House": 73,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 354,
+    "Total Variable Rate Taxes on Typical House": 4616,
+    "Total Property Taxes and Charges on Typical House": 5955
   },
   {
     "Year": 2023,
-    "Municipality": "Langley (District)"
+    "Municipality": "Langley (District)",
+    "Population": 142043,
+    "Total Taxable Value": 78605529376,
+    "Total Taxes Collected": 175500705,
+    "Tax per Capita": 1236,
+    "Property Classes": {
+      "Residential": {
+        "Taxable Value": 65329912417,
+        "Tax Rate": 1.6753,
+        "Tax Multiple": 1.0
+      },
+      "Utilities": {
+        "Taxable Value": 68360968,
+        "Tax Rate": 23.7377,
+        "Tax Multiple": 14.169223422670566
+      },
+      "Major Industry": {
+        "Taxable Value": 107418200,
+        "Tax Rate": 2.9789,
+        "Tax Multiple": 1.7781292902763683
+      },
+      "Light Industry": {
+        "Taxable Value": 4812794300,
+        "Tax Rate": 3.4091,
+        "Tax Multiple": 2.0349191189637676
+      },
+      "Business/Other": {
+        "Taxable Value": 8102615747,
+        "Tax Rate": 5.4507,
+        "Tax Multiple": 3.2535665253984365
+      },
+      "Managed Forest": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      },
+      "Recreation": {
+        "Taxable Value": 116167200,
+        "Tax Rate": 2.627,
+        "Tax Multiple": 1.568077359278935
+      },
+      "Farm": {
+        "Taxable Value": 68260544,
+        "Tax Rate": 13.0738,
+        "Tax Multiple": 7.803856025786426
+      }
+    },
+    "Typical House Value": 1485086,
+    "School Tax on Typical House": 1477,
+    "General Municipal Tax on Typical House": 2488,
+    "Regional District Tax on Typical House": 76,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 375,
+    "Total Variable Rate Taxes on Typical House": 4416,
+    "Total Property Taxes and Charges on Typical House": 5967
   },
   {
     "Year": 2023,
@@ -169041,11 +170765,119 @@
   },
   {
     "Year": 2023,
-    "Municipality": "North Vancouver (City)"
+    "Municipality": "North Vancouver (City)",
+    "Population": 61973,
+    "Total Taxable Value": 33153589748,
+    "Total Taxes Collected": 81179027,
+    "Tax per Capita": 1310,
+    "Property Classes": {
+      "Residential": {
+        "Taxable Value": 27883150131,
+        "Tax Rate": 1.63416,
+        "Tax Multiple": 1.0
+      },
+      "Utilities": {
+        "Taxable Value": 9084315,
+        "Tax Rate": 40.0,
+        "Tax Multiple": 24.477407353013167
+      },
+      "Major Industry": {
+        "Taxable Value": 351441000,
+        "Tax Rate": 27.5,
+        "Tax Multiple": 16.828217555196552
+      },
+      "Light Industry": {
+        "Taxable Value": 145123500,
+        "Tax Rate": 5.17997,
+        "Tax Multiple": 3.1698058941596905
+      },
+      "Business/Other": {
+        "Taxable Value": 4745170800,
+        "Tax Rate": 5.17997,
+        "Tax Multiple": 3.1698058941596905
+      },
+      "Managed Forest": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      },
+      "Recreation": {
+        "Taxable Value": 19620000,
+        "Tax Rate": 1.83546,
+        "Tax Multiple": 1.1231825525040389
+      },
+      "Farm": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      }
+    },
+    "Typical House Value": 2053215,
+    "School Tax on Typical House": 1776,
+    "General Municipal Tax on Typical House": 3355,
+    "Regional District Tax on Typical House": 107,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 519,
+    "Total Variable Rate Taxes on Typical House": 5757,
+    "Total Property Taxes and Charges on Typical House": 7187
   },
   {
     "Year": 2023,
-    "Municipality": "North Vancouver (District)"
+    "Municipality": "North Vancouver (District)",
+    "Population": 92390,
+    "Total Taxable Value": 61395319007,
+    "Total Taxes Collected": 120867792,
+    "Tax per Capita": 1308,
+    "Property Classes": {
+      "Residential": {
+        "Taxable Value": 55682978332,
+        "Tax Rate": 1.56104,
+        "Tax Multiple": 1.0
+      },
+      "Utilities": {
+        "Taxable Value": 5845743,
+        "Tax Rate": 40.0,
+        "Tax Multiple": 25.62394301235074
+      },
+      "Major Industry": {
+        "Taxable Value": 719619731,
+        "Tax Rate": 12.93039,
+        "Tax Multiple": 8.283189412186747
+      },
+      "Light Industry": {
+        "Taxable Value": 186137700,
+        "Tax Rate": 5.65733,
+        "Tax Multiple": 3.6240775380515555
+      },
+      "Business/Other": {
+        "Taxable Value": 4704990801,
+        "Tax Rate": 4.18656,
+        "Tax Multiple": 2.681904371444678
+      },
+      "Managed Forest": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      },
+      "Recreation": {
+        "Taxable Value": 95746700,
+        "Tax Rate": 3.78366,
+        "Tax Multiple": 2.423807205452775
+      },
+      "Farm": {
+        "Taxable Value": 0,
+        "Tax Rate": 0.0,
+        "Tax Multiple": 0.0
+      }
+    },
+    "Typical House Value": 2185637,
+    "School Tax on Typical House": 1891,
+    "General Municipal Tax on Typical House": 3412,
+    "Regional District Tax on Typical House": 113,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 552,
+    "Total Variable Rate Taxes on Typical House": 5968,
+    "Total Property Taxes and Charges on Typical House": 7997
   },
   {
     "Year": 2023,
@@ -169095,7 +170927,15 @@
         "Tax Rate": 1.22649,
         "Tax Multiple": 0.22352325827215935
       }
-    }
+    },
+    "Typical House Value": 162339,
+    "School Tax on Typical House": 656,
+    "General Municipal Tax on Typical House": 891,
+    "Regional District Tax on Typical House": 0,
+    "Hospital Tax on Typical House": 6,
+    "Other Tax on Typical House": 40,
+    "Total Variable Rate Taxes on Typical House": 1593,
+    "Total Property Taxes and Charges on Typical House": 2790
   },
   {
     "Year": 2023,
@@ -173093,7 +174933,15 @@
         "Tax Rate": 29.6352,
         "Tax Multiple": 11.579868708971553
       }
-    }
+    },
+    "Typical House Value": 1139332,
+    "School Tax on Typical House": 1367,
+    "General Municipal Tax on Typical House": 2916,
+    "Regional District Tax on Typical House": 86,
+    "Hospital Tax on Typical House": 102,
+    "Other Tax on Typical House": 40,
+    "Total Variable Rate Taxes on Typical House": 4511,
+    "Total Property Taxes and Charges on Typical House": 5497
   },
   {
     "Year": 2024,
@@ -176797,7 +178645,15 @@
         "Tax Rate": 2.1843,
         "Tax Multiple": 1.0
       }
-    }
+    },
+    "Typical House Value": 1370475,
+    "School Tax on Typical House": 1413,
+    "General Municipal Tax on Typical House": 2994,
+    "Regional District Tax on Typical House": 78,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 418,
+    "Total Variable Rate Taxes on Typical House": 4903,
+    "Total Property Taxes and Charges on Typical House": 6395
   },
   {
     "Year": 2024,
@@ -176847,7 +178703,15 @@
         "Tax Rate": 13.9988,
         "Tax Multiple": 7.831496503496503
       }
-    }
+    },
+    "Typical House Value": 1502344,
+    "School Tax on Typical House": 1549,
+    "General Municipal Tax on Typical House": 2685,
+    "Regional District Tax on Typical House": 84,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 459,
+    "Total Variable Rate Taxes on Typical House": 4777,
+    "Total Property Taxes and Charges on Typical House": 6363
   },
   {
     "Year": 2024,
@@ -177825,7 +179689,15 @@
         "Tax Rate": 0.49986,
         "Tax Multiple": 0.13208225215750727
       }
-    }
+    },
+    "Typical House Value": 783808,
+    "School Tax on Typical House": 1022,
+    "General Municipal Tax on Typical House": 2966,
+    "Regional District Tax on Typical House": 694,
+    "Hospital Tax on Typical House": 319,
+    "Other Tax on Typical House": 27,
+    "Total Variable Rate Taxes on Typical House": 5028,
+    "Total Property Taxes and Charges on Typical House": 5926
   },
   {
     "Year": 2024,
@@ -178223,7 +180095,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 2096439,
+    "School Tax on Typical House": 1874,
+    "General Municipal Tax on Typical House": 3709,
+    "Regional District Tax on Typical House": 120,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 640,
+    "Total Variable Rate Taxes on Typical House": 6343,
+    "Total Property Taxes and Charges on Typical House": 7914
   },
   {
     "Year": 2024,
@@ -178273,7 +180153,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 2232436,
+    "School Tax on Typical House": 1996,
+    "General Municipal Tax on Typical House": 3659,
+    "Regional District Tax on Typical House": 126,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 681,
+    "Total Variable Rate Taxes on Typical House": 6462,
+    "Total Property Taxes and Charges on Typical House": 8634
   },
   {
     "Year": 2024,
@@ -178323,7 +180211,15 @@
         "Tax Rate": 1.19454,
         "Tax Multiple": 0.2175062545748528
       }
-    }
+    },
+    "Typical House Value": 168630,
+    "School Tax on Typical House": 686,
+    "General Municipal Tax on Typical House": 926,
+    "Regional District Tax on Typical House": 0,
+    "Hospital Tax on Typical House": 6,
+    "Other Tax on Typical House": 43,
+    "Total Variable Rate Taxes on Typical House": 1661,
+    "Total Property Taxes and Charges on Typical House": 2858
   },
   {
     "Year": 2024,
@@ -179359,7 +181255,15 @@
         "Tax Rate": 16.39054,
         "Tax Multiple": 3.7759521928137176
       }
-    }
+    },
+    "Typical House Value": 594136,
+    "School Tax on Typical House": 907,
+    "General Municipal Tax on Typical House": 2629,
+    "Regional District Tax on Typical House": 510,
+    "Hospital Tax on Typical House": 209,
+    "Other Tax on Typical House": 21,
+    "Total Variable Rate Taxes on Typical House": 4276,
+    "Total Property Taxes and Charges on Typical House": 5367
   },
   {
     "Year": 2024,
@@ -182367,7 +184271,15 @@
         "Tax Rate": 31.1716,
         "Tax Multiple": 11.58072281994888
       }
-    }
+    },
+    "Typical House Value": 1152779,
+    "School Tax on Typical House": 1403,
+    "General Municipal Tax on Typical House": 3103,
+    "Regional District Tax on Typical House": 90,
+    "Hospital Tax on Typical House": 117,
+    "Other Tax on Typical House": 41,
+    "Total Variable Rate Taxes on Typical House": 4754,
+    "Total Property Taxes and Charges on Typical House": 5754
   },
   {
     "Year": 2025,
@@ -186071,7 +187983,15 @@
         "Tax Rate": 2.333,
         "Tax Multiple": 1.0
       }
-    }
+    },
+    "Typical House Value": 1369186,
+    "School Tax on Typical House": 1459,
+    "General Municipal Tax on Typical House": 3194,
+    "Regional District Tax on Typical House": 81,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 479,
+    "Total Variable Rate Taxes on Typical House": 5213,
+    "Total Property Taxes and Charges on Typical House": 6977
   },
   {
     "Year": 2025,
@@ -186121,7 +188041,15 @@
         "Tax Rate": 14.6235,
         "Tax Multiple": 7.795873760528841
       }
-    }
+    },
+    "Typical House Value": 1511423,
+    "School Tax on Typical House": 1610,
+    "General Municipal Tax on Typical House": 2835,
+    "Regional District Tax on Typical House": 87,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 529,
+    "Total Variable Rate Taxes on Typical House": 5061,
+    "Total Property Taxes and Charges on Typical House": 7021
   },
   {
     "Year": 2025,
@@ -187099,7 +189027,15 @@
         "Tax Rate": 0.5,
         "Tax Multiple": 0.12268282808455301
       }
-    }
+    },
+    "Typical House Value": 787743,
+    "School Tax on Typical House": 1053,
+    "General Municipal Tax on Typical House": 3210,
+    "Regional District Tax on Typical House": 726,
+    "Hospital Tax on Typical House": 425,
+    "Other Tax on Typical House": 28,
+    "Total Variable Rate Taxes on Typical House": 5442,
+    "Total Property Taxes and Charges on Typical House": 6388
   },
   {
     "Year": 2025,
@@ -187497,7 +189433,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 2110967,
+    "School Tax on Typical House": 1929,
+    "General Municipal Tax on Typical House": 4001,
+    "Regional District Tax on Typical House": 125,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 739,
+    "Total Variable Rate Taxes on Typical House": 6794,
+    "Total Property Taxes and Charges on Typical House": 8547
   },
   {
     "Year": 2025,
@@ -187547,7 +189491,15 @@
         "Tax Rate": 0.0,
         "Tax Multiple": 0.0
       }
-    }
+    },
+    "Typical House Value": 2277299,
+    "School Tax on Typical House": 2081,
+    "General Municipal Tax on Typical House": 3895,
+    "Regional District Tax on Typical House": 134,
+    "Hospital Tax on Typical House": 0,
+    "Other Tax on Typical House": 797,
+    "Total Variable Rate Taxes on Typical House": 6907,
+    "Total Property Taxes and Charges on Typical House": 9300
   },
   {
     "Year": 2025,
@@ -187597,7 +189549,15 @@
         "Tax Rate": 0.5544,
         "Tax Multiple": 0.0922743530892102
       }
-    }
+    },
+    "Typical House Value": 169334,
+    "School Tax on Typical House": 704,
+    "General Municipal Tax on Typical House": 1017,
+    "Regional District Tax on Typical House": 0,
+    "Hospital Tax on Typical House": 13,
+    "Other Tax on Typical House": 44,
+    "Total Variable Rate Taxes on Typical House": 1778,
+    "Total Property Taxes and Charges on Typical House": 2974
   },
   {
     "Year": 2025,
@@ -188633,7 +190593,15 @@
         "Tax Rate": 13.03319,
         "Tax Multiple": 2.7359958854647743
       }
-    }
+    },
+    "Typical House Value": 601795,
+    "School Tax on Typical House": 925,
+    "General Municipal Tax on Typical House": 2917,
+    "Regional District Tax on Typical House": 557,
+    "Hospital Tax on Typical House": 208,
+    "Other Tax on Typical House": 22,
+    "Total Variable Rate Taxes on Typical House": 4629,
+    "Total Property Taxes and Charges on Typical House": 5754
   },
   {
     "Year": 2025,

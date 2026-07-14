@@ -58,7 +58,12 @@ _TYPE_SUFFIX = {'C': ' (City)', 'D': ' (District)'}
 _NAME_ALIASES = {
     "Abbotsford - C": "Abbotsford",
     "Queen Charlotte": "Daajing Giids",
-    "Northern Rockies - REGM": "Northern Rockies"
+    "Northern Rockies - REGM": "Northern Rockies",
+    # 2020-2023: type suffix is embedded in name column as " - C" / " - D"
+    "North Vancouver - C": "North Vancouver (City)",
+    "North Vancouver - D": "North Vancouver (District)",
+    "Langley - C": "Langley (City)",
+    "Langley - D": "Langley (District)",
 }
 
 def _disambiguate(df: pd.DataFrame, muni_col: int = 0, type_col: int = 1) -> None:
@@ -204,6 +209,12 @@ def scrape_704(year: int, municipalities: list[str]) -> dict:
     # Column 1 is the municipality type (C=City, D=District) — needed to
     # disambiguate Langley and North Vancouver before we drop it.
     df = pd.read_excel(path, header=1, usecols=[0, 1, 3, 4, 5, 6, 7, 8, 9, 12])
+
+    # Strip leading/trailing whitespace from municipality names
+    df.iloc[:, 0] = df.iloc[:, 0].astype(str).str.strip()
+
+    # Normalise known name variations to their canonical form
+    df.iloc[:, 0] = df.iloc[:, 0].replace(_NAME_ALIASES)
 
     # Append (City)/(District) suffix to ambiguous municipality names, then drop type col.
     _disambiguate(df, muni_col=0, type_col=1)
