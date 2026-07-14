@@ -10,6 +10,7 @@ from shiny.express import input, render, ui
 from shinywidgets import render_plotly
 from coords import MUNI_COORDS
 
+# this is a trivial change to force an update...
 
 def load_data(path: str | Path | None = None) -> pd.DataFrame:
     """Load data.json into a flat DataFrame.
@@ -55,7 +56,7 @@ PROPERTY_CLASSES = [
     if col.endswith(" Tax Rate")
 ]
 
-DEFAULT_MUNIS = ["Squamish", "Whistler", "Pemberton"]
+DEFAULT_MUNIS = ["Squamish", "Whistler", "Pemberton", "North Vancouver (District)"]
 
 _latest_pop = (
     plot_df[plot_df["Year"] == END_YEAR][["Municipality", "Population"]]
