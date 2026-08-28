@@ -379,10 +379,32 @@ with ui.navset_tab():
 
                     all_d = plot_df[plot_df["Year"] == year][col].dropna()
                     all_d = all_d[all_d != 0]
+
+                    # Derive selected set directly from filter inputs so that
+                    # "select all" ranges produce the same avg as all-municipalities.
+                    filter_type = input.filter_type()
+                    if filter_type == "var" and input.var_min() is not None and input.var_max() is not None:
+                        col_f = input.filter_var()
+                        year_f = int(input.filter_var_year())
+                        lo, hi = input.var_min(), input.var_max()
+                        filtered_munis = plot_df[
+                            (plot_df["Year"] == year_f) &
+                            (plot_df[col_f].between(lo, hi))
+                        ]["Municipality"]
+                    elif filter_type == "pop":
+                        lo, hi = input.pop_range()
+                        filtered_munis = _latest_pop[(_latest_pop >= lo) & (_latest_pop <= hi)].index
+                    elif filter_type == "thv":
+                        lo, hi = input.thv_range()
+                        filtered_munis = _latest_thv[(_latest_thv >= lo) & (_latest_thv <= hi)].index
+                    else:
+                        filtered_munis = munis
+
                     sel_d = plot_df[
                         (plot_df["Year"] == year) &
-                        (plot_df["Municipality"].isin(munis))
+                        (plot_df["Municipality"].isin(filtered_munis))
                     ][col].dropna()
+                    sel_d = sel_d[sel_d != 0]
 
                     def fmt(val):
                         if pd.isna(val):
