@@ -136,11 +136,16 @@ with ui.sidebar():
 
     ui.hr()
 
-    ui.markdown("Filter municipalies by Population, Typical House Value, or manually select by name above.")
+    ui.markdown("Filter municipalities by any variable, or manually select by name above.")
     ui.input_radio_buttons(
         "filter_type",
         "",
-        choices={"none": "Manual Selection", "pop": "Population", "thv": "Typical House Value"},
+        choices={
+            "none": "Manual Selection",
+            "pop": "Population",
+            "thv": "Typical House Value",
+            "var": "Any Variable",
+        },
         selected="none",
     )
     with ui.panel_conditional("input.filter_type === 'pop'"):
@@ -166,6 +171,35 @@ with ui.sidebar():
             sep=",",
             width="100%",
         )
+    with ui.panel_conditional("input.filter_type === 'var'"):
+        ui.input_select(
+            "filter_var",
+            None,
+            choices=PLOT_VARS,
+            selected="Tax per Capita",
+            width="100%",
+        )
+        ui.input_select(
+            "filter_var_year",
+            "Year:",
+            choices=[str(y) for y in range(START_YEAR, END_YEAR + 1)],
+            selected=str(END_YEAR),
+            width="100%",
+        )
+        @render.ui
+        def var_range_slider():
+            col = input.filter_var()
+            year = int(input.filter_var_year())
+            series = plot_df[plot_df["Year"] == year][col].dropna()
+            series = series[series != 0]
+            if series.empty:
+                return ui.p("No data for this variable/year.")
+            lo = float(series.min())
+            hi = float(series.max())
+            return ui.TagList(
+                ui.input_numeric("var_min", "Min:", value=round(lo, 2), width="100%"),
+                ui.input_numeric("var_max", "Max:", value=round(hi, 2), width="100%"),
+            )
     ui.hr()
 
     ui.markdown(
@@ -193,6 +227,17 @@ def _sync_muni_filter():
     elif filter_type == "thv":
         lo, hi = input.thv_range()
         in_range = _latest_thv[(_latest_thv >= lo) & (_latest_thv <= hi)].index.tolist()
+    elif filter_type == "var":
+        col = input.filter_var()
+        year = int(input.filter_var_year())
+        req(input.var_min)
+        req(input.var_max)
+        lo = input.var_min()
+        hi = input.var_max()
+        if lo is None or hi is None:
+            return
+        subset = plot_df[plot_df["Year"] == year][["Municipality", col]].dropna()
+        in_range = subset[subset[col].between(lo, hi)]["Municipality"].tolist()
     else:
         return
     ui.update_selectize("municipalities", selected=sorted(in_range))
