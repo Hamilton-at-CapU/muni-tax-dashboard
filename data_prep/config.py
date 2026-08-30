@@ -170,7 +170,7 @@ MUNICIPALITIES = [
 ]
 
 START_YEAR = 2005
-END_YEAR = 2025
+END_YEAR = 2026
 
 # Property classes to extract per-class data for (excludes Totals and Supportive Housing)
 PROPERTY_CLASSES = [
